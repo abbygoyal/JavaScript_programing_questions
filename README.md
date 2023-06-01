@@ -66,17 +66,15 @@ function calculateFactorial(number) {
 //Example usage:
 console.log(calculateFactorial(5)); // Output: 120
 console.log(calculateFactorial(0)); // Output: 1
-
+```
 
 In the above program, the calculateFactorial function takes a number as an argument and calculates its factorial.
 If the number is 0 or 1, the factorial is 1.
 Otherwise, a for loop is used to iterate from 2 to the given number, multiplying each number to the factorial variable.
 The final factorial value is returned.
 
- You can test the program by calling the calculateFactorial function with different numbers.
- In the example above, it is called with 5 and 0, and it returns the factorial values of 120 and 1, respectively.
-
-```
+You can test the program by calling the calculateFactorial function with different numbers.
+In the example above, it is called with 5 and 0, and it returns the factorial values of 120 and 1, respectively.
 
 <br/>
 
@@ -120,7 +118,7 @@ console.log(calculateFactorialRecursive(0)); // Output: 1
 
 <br/>
 
-## Q 4. **_Swap two numbers_** without using third variable approach.
+## Q 4. **_Swap two numbers_** without using third variable.
 
 ```js
 function swapNumbers(a, b) {
@@ -136,7 +134,7 @@ let y = 5;
 console.log("Before swapping: x =", x, "and y =", y);
 [x, y] = swapNumbers(x, y);
 console.log("After swapping: x =", x, "and y =", y);
-
+```
 
 In the above function, the swapNumbers function takes two numbers a and b as arguments.
 The swapping is done using arithmetic operations without using a third variable.
@@ -147,4 +145,31 @@ Finally, we assign a - b to a. This step stores the original value of b in a.
 After calling the swapNumbers function, the values of x and y will be swapped.
 In the example above, the initial values are x = 10 and y = 5. After swapping,
 the values become x = 5 and y = 10.
+
+<br/>
+
+## Q 5. How to check the given number is **_Positive or Negative_** in JavaScript?
+
+```js
+function checkPositiveNegative(number) {
+  if (number > 0) {
+    return "Positive";
+  } else if (number < 0) {
+    return "Negative";
+  } else {
+    return "Zero";
+  }
+}
+
+// Example usage:
+console.log(checkPositiveNegative(5)); // Output: Positive
+console.log(checkPositiveNegative(-7)); // Output: Negative
+console.log(checkPositiveNegative(0)); // Output: Zero
 ```
+
+In the checkPositiveNegative function, the number is compared to 0 using the greater than (>) and less than (<) operators.
+If the number is greater than 0, it is considered positive. If the number is less than 0, it is considered negative.
+If the number is equal to 0, it is considered zero. The corresponding string is returned based on the comparison result.
+
+You can call the checkPositiveNegative function with different numbers to test whether they are positive, negative, or zero.
+In the example above, it is called with the numbers 5, -7, and 0, and it returns the corresponding results.
