@@ -47,3 +47,28 @@ function checkEvenOrOdd(number) {
 <div align="right">
     <b><a href="#table-of-contents">↥ back to top</a></b>
 </div>
+
+<br/>
+
+## Q 2. Check the given number is **_EVEN or ODD_**.
+
+```js
+function calculateFactorial(number) {
+  if (number === 0 || number === 1) {
+    return 1;
+  } else {
+    let factorial = 1;
+    for (let i = 2; i <= number; i++) {
+      factorial *= i;
+    }
+    return factorial;
+  }
+}
+ Example usage:
+console.log(calculateFactorial(5));  // Output: 120
+console.log(calculateFactorial(0));  // Output: 1
+```
+
+<div align="right">
+    <b><a href="#table-of-contents">↥ back to top</a></b>
+</div>
