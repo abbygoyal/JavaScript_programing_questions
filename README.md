@@ -1,6 +1,6 @@
 # JavaScript Programing Questions By Abhishek Goyal
 
-> _Click &#9733; if you like the project. Your contributions are heartily ♡ welcome._
+> \_Click &#9733; if you like the project. Your contributions are heartily ♡ welcome.
 
 <br/>
 
@@ -24,7 +24,7 @@
 * [Promises](#-15-promises)
 * [Collections](#-16-collections)
 * [Modules](#-17-modules)
-* [Miscellaneous](#-18-miscellaneous) --> -->
+* [Miscellaneous](#-18-miscellaneous) -->
 
 <br/>
 
@@ -68,13 +68,17 @@ console.log(calculateFactorial(5)); // Output: 120
 console.log(calculateFactorial(0)); // Output: 1
 ```
 
-In the above program, the calculateFactorial function takes a number as an argument and calculates its factorial.
+In the above program, the calculateFactorial function takes a number as an
+argument and calculates its factorial.
 If the number is 0 or 1, the factorial is 1.
-Otherwise, a for loop is used to iterate from 2 to the given number, multiplying each number to the factorial variable.
+Otherwise, a for loop is used to iterate from 2 to the given number, multiplying
+each number to the factorial variable.
 The final factorial value is returned.
 
-You can test the program by calling the calculateFactorial function with different numbers.
-In the example above, it is called with 5 and 0, and it returns the factorial values of 120 and 1, respectively.
+You can test the program by calling the calculateFactorial function with different
+numbers.
+In the example above, it is called with 5 and 0, and it returns the factorial values
+of 120 and 1, respectively.
 
 <br/>
 
@@ -167,12 +171,17 @@ console.log(checkPositiveNegative(-7)); // Output: Negative
 console.log(checkPositiveNegative(0)); // Output: Zero
 ```
 
-In the checkPositiveNegative function, the number is compared to 0 using the greater than (>) and less than (<) operators.
-If the number is greater than 0, it is considered positive. If the number is less than 0, it is considered negative.
-If the number is equal to 0, it is considered zero. The corresponding string is returned based on the comparison result.
+In the checkPositiveNegative function, the number is compared to 0 using the
+greater than (>) and less than (<) operators.
+If the number is greater than 0, it is considered positive. If the number is
+less than 0, it is considered negative.
+If the number is equal to 0, it is considered zero. The corresponding string
+is returned based on the comparison result.
 
-You can call the checkPositiveNegative function with different numbers to test whether they are positive, negative, or zero.
-In the example above, it is called with the numbers 5, -7, and 0, and it returns the corresponding results.
+You can call the checkPositiveNegative function with different numbers to test
+whether they are positive, negative, or zero.
+In the example above, it is called with the numbers 5, -7, and 0, and it returns
+the corresponding results.
 
 <br/>
 
@@ -203,6 +212,7 @@ It checks two conditions to determine whether the year is a leap year:
 
 If either of these conditions is satisfied, the function returns "Leap year".
 Otherwise, it returns "Not a leap year".
+
 <br/>
 
 ## Q 7. Write a JavaScript Program to find whether given number is **_Leap year or NOT_**?
@@ -217,3 +227,71 @@ console.log(isLeapYear(2000));  // Output: true
 console.log(isLeapYear(1900));  // Output: false
 
 ```
+
+<br/>
+
+## Q 8. Write a JavaScript Program to Print 1 To 10 Without Using Loop.
+
+```js
+function isLeapYear(year) {
+  return new Date(year, 1, 29).getDate() === 29;
+}
+
+// Example usage:
+console.log(isLeapYear(2020)); // Output: true
+console.log(isLeapYear(2021)); // Output: false
+console.log(isLeapYear(2000)); // Output: true
+console.log(isLeapYear(1900)); // Output: false
+```
+
+In this program, the printNumbers function takes a number n as an argument.
+It uses a recursive approach to print the current number and then calls
+itself with the next number (n + 1) until n reaches 10.
+
+By initially calling the printNumbers function with the starting number 1,
+it will recursively print the numbers from 1 to 10 without using a loop.
+
+When you run this program, it will output the numbers 1 to 10 in the
+console without explicitly using a loop construct.
+
+<br/>
+
+## Q 9. Write a Java Program to print the **_digits of a Given Number_**.
+
+```js
+function printDigits(number) {
+  if (number < 10) {
+    console.log(number);
+  } else {
+    printDigits(Math.floor(number / 10));
+    console.log(number % 10);
+  }
+}
+
+// Example usage:
+printDigits(12345);
+
+// Each digit of the given number will be printed on a separate line.
+
+1;
+2;
+3;
+4;
+5;
+```
+
+In this program, the printDigits function takes a number as an argument.
+It uses a recursive approach to print the digits of the number.
+
+The function first checks if the number is less than 10. If so, it directly
+prints the number as it is a single-digit number.
+
+If the number is greater than or equal to 10, it divides the number by 10 using
+Math.floor(number / 10) to remove the rightmost digit. It then calls
+printDigits recursively with the truncated number to print the remaining digits.
+
+After the recursive call, it uses number % 10 to extract and print the rightmost
+digit.
+
+By calling the printDigits function with a given number, it will print each
+digit of the number on separate lines.
