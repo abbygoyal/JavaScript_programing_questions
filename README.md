@@ -295,3 +295,71 @@ digit.
 
 By calling the printDigits function with a given number, it will print each
 digit of the number on separate lines.
+<br/>
+
+## Q 9. Write a JavaScript Program to print all the **_Factors of the Given number_**.
+
+```js
+function printFactors(number) {
+  console.log("Factors of", number + ":");
+  for (let i = 1; i <= number; i++) {
+    if (number % i === 0) {
+      console.log(i);
+    }
+  }
+}
+
+// Example usage:
+printFactors(24);
+
+Factors of 24:
+1
+2
+3
+4
+6
+8
+12
+24
+
+```
+
+In this program, the printFactors function takes a number as an argument.
+It uses a loop to iterate from 1 to the given number.
+
+Inside the loop, it checks if the current number i is a factor of the given number.
+This is done by checking if the remainder of dividing the given number by i is 0.
+If the remainder is 0, it means i evenly divides the given number and is a factor.
+
+If i is a factor, it is printed to the console using console.log.
+
+By calling the printFactors function with a given number,
+it will print all the factors of that number.
+
+<br/>
+
+## Q 10. Write a Java Program to print all the **_Factors of the Given number_**.
+
+```js
+function sumOfDigits(number) {
+  let sum = 0;
+  while (number > 0) {
+    sum += number % 10;
+    number = Math.floor(number / 10);
+  }
+  return sum;
+}
+
+// Example usage:
+console.log(sumOfDigits(12345)); // Output: 15
+```
+
+In this program, the sumOfDigits function takes a number as an argument.
+It initializes a variable sum to store the sum of the digits, initially set to 0.
+
+A while loop is used to iterate until the number becomes 0. In each iteration,
+the remainder of dividing the number by 10 (number % 10) is added to the sum variable.
+This extracts the rightmost digit of the number and adds it to the sum.
+
+After adding the digit, the number is divided by 10 (number = Math.floor(number / 10)) to
+remove the rightmost digit. This process continues until all the digits have been processed.
