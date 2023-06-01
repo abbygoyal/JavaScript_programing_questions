@@ -363,3 +363,61 @@ This extracts the rightmost digit of the number and adds it to the sum.
 
 After adding the digit, the number is divided by 10 (number = Math.floor(number / 10)) to
 remove the rightmost digit. This process continues until all the digits have been processed.
+
+<br/>
+
+## Q 11. Write a Java Program to find **_sum of the digits of a given number_**.
+
+```js
+function findSmallest(a, b, c) {
+  if (a <= b && a <= c) {
+    return a;
+  } else if (b <= a && b <= c) {
+    return b;
+  } else {
+    return c;
+  }
+}
+
+// Example usage:
+console.log(findSmallest(4, 7, 2)); // Output: 2
+console.log(findSmallest(9, 3, 5)); // Output: 3
+console.log(findSmallest(1, 6, 8)); // Output: 1
+
+//another Method
+
+function findSmallest(a, b, c) {
+  return Math.min(...arguments);
+}
+
+// Example usage:
+console.log(findSmallest(4, 7, 2)); // Output: 2
+console.log(findSmallest(9, 3, 5)); // Output: 3
+console.log(findSmallest(1, 6, 8)); // Output: 1
+```
+
+In this program, the findSmallest function takes three numbers (a, b, and c) as
+arguments. It uses a series of if and else statements to compare the numbers and
+determine the smallest one.
+
+The function checks the following conditions:
+
+1. If a is less than or equal to both b and c, then a is the smallest number.
+2. If b is less than or equal to both a and c, then b is the smallest number.
+   Otherwise, c is the smallest number.
+
+<br/>
+
+In 2nd approach, the findSmallest function takes three numbers (a, b, and c) as
+arguments. It uses the spread operator (...) along with the Math.min function to
+find the smallest number among the arguments.
+
+The spread operator ...arguments expands the three arguments into separate values,
+which are then passed to the Math.min function. The Math.min function returns the
+smallest value among the provided arguments.
+
+By calling the findSmallest function with three numbers, it will return the smallest
+number among them using the spread operator and the Math.min function.
+
+This approach provides a concise way to find the smallest of three numbers without
+the need for explicit comparisons using if or else statements.
