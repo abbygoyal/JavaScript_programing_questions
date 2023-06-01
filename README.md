@@ -67,10 +67,10 @@ function calculateFactorial(number) {
 console.log(calculateFactorial(5)); // Output: 120
 console.log(calculateFactorial(0)); // Output: 1
 
-/* In the above program, the calculateFactorial function takes a number as an argument and calculates its factorial. If the number is 0 or 1, the factorial is 1. Otherwise, a for loop is used to iterate from 2 to the given number, multiplying each number to the factorial variable. The final factorial value is returned.
+In the above program, the calculateFactorial function takes a number as an argument and calculates its factorial. If the number is 0 or 1, the factorial is 1. Otherwise, a for loop is used to iterate from 2 to the given number, multiplying each number to the factorial variable. The final factorial value is returned.
 
  You can test the program by calling the calculateFactorial function with different numbers. In the example above, it is called with 5 and 0, and it returns the factorial values of 120 and 1, respectively.
-*/
+
 ```
 
 <br/>
@@ -118,15 +118,25 @@ console.log(calculateFactorialRecursive(0)); // Output: 1
 ## Q 4. **_Swap two numbers_** without using third variable approach.
 
 ```js
-function calculateFactorialRecursive(number) {
-  if (number === 0 || number === 1) {
-    return 1;
-  } else {
-    return number * calculateFactorialRecursive(number - 1);
-  }
+function swapNumbers(a, b) {
+  a = a + b;
+  b = a - b;
+  a = a - b;
+  return [a, b];
 }
 
 // Example usage:
-console.log(calculateFactorialRecursive(5)); // Output: 120
-console.log(calculateFactorialRecursive(0)); // Output: 1
+let x = 10;
+let y = 5;
+console.log("Before swapping: x =", x, "and y =", y);
+[x, y] = swapNumbers(x, y);
+console.log("After swapping: x =", x, "and y =", y);
+
+
+In the above function, the swapNumbers function takes two numbers a and b as arguments. The swapping is done using arithmetic operations without using a third variable.
+
+We first assign a + b to a. This step stores the sum of the two numbers in a.
+We then assign a - b to b. This step stores the original value of a in b.
+Finally, we assign a - b to a. This step stores the original value of b in a.
+After calling the swapNumbers function, the values of x and y will be swapped. In the example above, the initial values are x = 10 and y = 5. After swapping, the values become x = 5 and y = 10.
 ```
