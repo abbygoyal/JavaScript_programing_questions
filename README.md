@@ -48,7 +48,7 @@ console.log(checkEvenOrOdd(7)); // Output: Odd
 ```
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="#JavaScript Programing Questions By Abhishek Goyal">↥ back to top</a></b>
 </div>
 
 <br/>
@@ -78,7 +78,7 @@ You can test the program by calling the calculateFactorial function with differe
 ```
 
 <div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
+    <b><a href="# JavaScript Programing Questions By Abhishek Goyal">↥ back to top</a></b>
 </div>
 
 <br/>
