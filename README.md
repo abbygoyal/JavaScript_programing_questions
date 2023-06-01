@@ -47,10 +47,6 @@ console.log(checkEvenOrOdd(4)); // Output: Even
 console.log(checkEvenOrOdd(7)); // Output: Odd
 ```
 
-<div align="right">
-    <b><a href="#JavaScript Programing Questions By Abhishek Goyal">↥ back to top</a></b>
-</div>
-
 <br/>
 
 ## Q 2. Check the given number is **_EVEN or ODD_**.
@@ -77,10 +73,6 @@ You can test the program by calling the calculateFactorial function with differe
 
 ```
 
-<div align="right">
-    <b><a href="# JavaScript Programing Questions By Abhishek Goyal">↥ back to top</a></b>
-</div>
-
 <br/>
 
 ## Q 3. Find the **_Factorial_** of a number using **_Recursion_** .
@@ -95,26 +87,40 @@ function calculateFactorialRecursive(number) {
 }
 
 // Example usage:
-console.log(calculateFactorialRecursive(5));  // Output: 120
-console.log(calculateFactorialRecursive(0));  // Output: 1
+console.log(calculateFactorialRecursive(5)); // Output: 120
+console.log(calculateFactorialRecursive(0)); // Output: 1
+```
 
 Factorial Using Recursion
 
 In mathematics, the factorial of a positive integer n,
 denoted by n!, is the product of all positive integers
 less than or equal to n:
- n! can be written as
- n! = 1 * 2 * 3 * .... * (n-1) * n;
- n! can also be written as
- n! = n * (n-1)!
- This approach helps to calculate using Recursion
- 5! = 5 * 4!
- 4! = 4 * 3!
- 3! = 3 * 2!
- 2! = 2 * 1!
- 1! = 1
-```
+n! can be written as
+n! = 1 _ 2 _ 3 _ .... _ (n-1) _ n;
+n! can also be written as
+n! = n _ (n-1)!
+This approach helps to calculate using Recursion
+5! = 5 _ 4!
+4! = 4 _ 3!
+3! = 3 _ 2!
+2! = 2 _ 1!
+1! = 1
 
-<div align="right">
-    <b><a href="#table-of-contents">↥ back to top</a></b>
-</div>
+<br/>
+
+## Q 4. **_Swap two numbers_** without using third variable approach.
+
+```js
+function calculateFactorialRecursive(number) {
+  if (number === 0 || number === 1) {
+    return 1;
+  } else {
+    return number * calculateFactorialRecursive(number - 1);
+  }
+}
+
+// Example usage:
+console.log(calculateFactorialRecursive(5)); // Output: 120
+console.log(calculateFactorialRecursive(0)); // Output: 1
+```
