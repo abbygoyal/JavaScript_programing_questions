@@ -421,3 +421,35 @@ number among them using the spread operator and the Math.min function.
 
 This approach provides a concise way to find the smallest of three numbers without
 the need for explicit comparisons using if or else statements.
+
+<br/>
+
+## Q 12. Write a java program to **_Reverse a given number_**.
+
+```js
+function reverseNumber(number) {
+  let reversed = 0;
+  while (number !== 0) {
+    reversed = reversed * 10 + (number % 10);
+    number = Math.floor(number / 10);
+  }
+  return reversed;
+}
+
+// Example usage:
+console.log(reverseNumber(12345)); // Output: 54321
+console.log(reverseNumber(9876)); // Output: 6789
+console.log(reverseNumber(100)); // Output: 1
+```
+
+In this program, the reverseNumber function takes a number as an argument.
+It initializes a variable reversed to store the reversed number, initially set
+to 0.
+
+A while loop is used to iterate until the number becomes 0. In each iteration,
+the rightmost digit of the number (number % 10) is extracted and added to the
+reversed variable by multiplying it by 10 and then adding the digit.
+
+After adding the digit, the number is divided by 10
+(number = Math.floor(number / 10)) to remove the rightmost digit.
+This process continues until all the digits have been processed.
