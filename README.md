@@ -91,24 +91,25 @@ console.log(calculateFactorialRecursive(5)); // Output: 120
 console.log(calculateFactorialRecursive(0)); // Output: 1
 ```
 
-- Factorial Using Recursion
-- ***
-- In mathematics, the factorial of a positive integer n,
-- denoted by n!, is the product of all positive integers
-- less than or equal to n:
--
-- n! can be written as
-- n! = 1 _ 2 _ 3 _ .... _ (n-1) \* n;
--
-- n! can also be written as
-- n! = n \* (n-1)!
-- This approach helps to calculate using Recursion
--
-- 5! = 5 \* 4!
-- 4! = 4 \* 3!
-- 3! = 3 \* 2!
-- 2! = 2 \* 1!
-- 1! = 1
+//Factorial Using Recursion
+//--------------------------
+//In mathematics, the factorial of a positive integer n,
+//denoted by n!, is the product of all positive integers
+//less than or equal to n:
+//
+// n! can be written as
+// n! = 1 _ 2 _ 3 _ .... _ (n-1) _ n;
+//
+// n! can also be written as
+// n! = n _ (n-1)!
+// This approach helps to calculate using Recursion
+//
+// 5! = 5 _ 4!
+// 4! = 4 _ 3!
+// 3! = 3 _ 2!
+// 2! = 2 _ 1!
+// 1! = 1
+//
 
 <br/>
 
