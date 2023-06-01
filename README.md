@@ -173,3 +173,47 @@ If the number is equal to 0, it is considered zero. The corresponding string is 
 
 You can call the checkPositiveNegative function with different numbers to test whether they are positive, negative, or zero.
 In the example above, it is called with the numbers 5, -7, and 0, and it returns the corresponding results.
+
+<br/>
+
+## Q 6. Write a JavaScript Program to find whether given number is **_Leap year or NOT_**?
+
+```js
+function isLeapYear(year) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    return "Leap year";
+  } else {
+    return "Not a leap year";
+  }
+}
+
+// Example usage:
+console.log(isLeapYear(2020)); // Output: Leap year
+console.log(isLeapYear(2021)); // Output: Not a leap year
+console.log(isLeapYear(2000)); // Output: Leap year
+console.log(isLeapYear(1900)); // Output: Not a leap year
+```
+
+In the above program, the isLeapYear function takes a year as an argument.
+
+It checks two conditions to determine whether the year is a leap year:
+
+1. If the year is divisible by 4 and not divisible by 100, it is a leap year.
+2. If the year is divisible by 400, it is also a leap year.
+
+If either of these conditions is satisfied, the function returns "Leap year".
+Otherwise, it returns "Not a leap year".
+<br/>
+
+## Q 7. Write a JavaScript Program to find whether given number is **_Leap year or NOT_**?
+
+```js
+function isLeapYear(year) = > year % 4 === 0;
+
+// Example usage:
+console.log(isLeapYear(2020));  // Output: true
+console.log(isLeapYear(2021));  // Output: false
+console.log(isLeapYear(2000));  // Output: true
+console.log(isLeapYear(1900));  // Output: false
+
+```
