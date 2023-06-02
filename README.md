@@ -658,7 +658,9 @@ Finally, the findLCM function calculates the LCM by iterating over the merged pr
 factors. It multiplies each prime factor raised to its corresponding frequency to
 calculate the LCM.
 
-## Q 3. Check whether the **_Given Number_** is a **_Palindrome or NOT_**.
+<br/>
+
+## Q 4. Check whether the **_Given Number_** is a **_Palindrome or NOT_**.
 
 ```js
 /*
@@ -731,3 +733,44 @@ removing the last digit using integer division (Math.floor(number / 10)).
 After the loop finishes, we compare originalNumber with reversedNumber. If
 they are equal, it means the number is a palindrome, and the function returns
 true. Otherwise, it returns false.
+
+<br/>
+
+## Q 5. Write a Java Program to print all the **Prime Factors** of the Given Number.
+
+```js
+function printPrimeFactors(number) {
+  let factor = 2;
+
+  while (number > 1) {
+    if (number % factor === 0) {
+      console.log(factor);
+      number /= factor;
+    } else {
+      factor++;
+    }
+  }
+}
+
+// Example usage:
+printPrimeFactors(24); // Output: 2 2 2 3
+printPrimeFactors(56); // Output: 2 2 2 7
+printPrimeFactors(100); // Output: 2 2 5 5
+printPrimeFactors(97); // Output: 97
+```
+
+1. The printPrimeFactors function takes a number as its parameter.
+2. Inside the function, we initialize a variable factor to 2. This will be the
+   first number we check for divisibility.
+3. The while loop runs as long as number is greater than 1. The loop will continue
+   until the number becomes 1, meaning we have divided out all the prime
+   factors.
+4. Inside the loop, we check if number is divisible evenly by the current factor
+   using the modulo operator (%). If the remainder is 0, it means that factor is a
+   prime factor of number.
+5. If factor is a prime factor, we print it using console.log(factor). We also
+   divide number by factor to reduce its value.
+6. If factor is not a prime factor, we increment it by 1 and continue the loop to
+   check the next number.
+7. The loop continues until number becomes 1, at which point all the prime factors
+   have been found and printed.
