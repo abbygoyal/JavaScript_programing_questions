@@ -804,3 +804,59 @@ console.log(isPrime(28)); // Output: false
    number, so we return false.
 3. If the number is not divisible by any number in the range, it is a prime
    number, so we return true.
+
+<br/>
+
+## Q 7 . Write a Java Program to print **_Prime Numbers from 1 to N_**.
+
+```js
+function isPrime(number) {
+  if (number < 2) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function printPrimeNumbers(N) {
+  for (let number = 2; number <= N; number++) {
+    if (isPrime(number)) {
+      console.log(number);
+    }
+  }
+}
+
+console.log(printPrimeNumbers(20));
+
+// output
+// 2
+// 3
+// 5
+// 7
+// 11
+// 13
+// 17
+// 19
+```
+
+In this program, we have two functions. The first function, isPrime,
+checks whether a given number is prime or not. It follows the same
+logic as explained in the previous response about checking prime
+numbers.
+
+The second function, printPrimeNumbers, takes a number N as input and
+prints all the prime numbers from 1 to N. It uses a for loop to
+iterate from 2 to N. For each number in this range, it calls the
+isPrime function to check if the number is prime. If it is, it is
+printed using console.log().
+
+In the example, the number N is set to 20 to test the function. You
+can replace it with any other positive integer to print the prime
+numbers from 1 to that number. The program will print the prime
+numbers in the given range.
