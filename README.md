@@ -563,3 +563,99 @@ multiple, and the loop is exited.
 
 If the LCM is not divisible by both a and b, it is incremented by max. This
 process continues until the LCM is found.
+
+<br/>
+
+## Q3. Write a java program to **_LCM of TWO given number_** using Prime Factors method.
+
+```js
+/*
+ * 	LCM - Least Common Multiple
+ *
+ * The LCM of two integers is the smallest
+ * positive integer that is perfectly divisible
+ * by both the numbers without a reminder.
+ * (means reminder should be zero)
+ *
+ * say n1 = 12 and n2 = 15
+ * 12 & 15 can divide 60, 120, 180 ...
+ * but the smallest number is 60
+ * LCM of 12 & 15 is 60
+ *
+ */
+
+function findLCM(a, b) {
+  // Find prime factors of both numbers
+  const primeFactorsA = findPrimeFactors(a);
+  const primeFactorsB = findPrimeFactors(b);
+
+  // Merge prime factors from both numbers
+  const allPrimeFactors = mergePrimeFactors(primeFactorsA, primeFactorsB);
+
+  // Calculate LCM using prime factors
+  let lcm = 1;
+  for (const prime in allPrimeFactors) {
+    lcm *= Math.pow(prime, allPrimeFactors[prime]);
+  }
+
+  return lcm;
+}
+
+function findPrimeFactors(num) {
+  const primeFactors = {};
+
+  for (let i = 2; i <= num; i++) {
+    while (num % i === 0) {
+      if (primeFactors[i]) {
+        primeFactors[i]++;
+      } else {
+        primeFactors[i] = 1;
+      }
+      num /= i;
+    }
+  }
+
+  return primeFactors;
+}
+
+function mergePrimeFactors(factorsA, factorsB) {
+  const mergedFactors = { ...factorsA };
+
+  for (const prime in factorsB) {
+    if (mergedFactors[prime]) {
+      mergedFactors[prime] = Math.max(mergedFactors[prime], factorsB[prime]);
+    } else {
+      mergedFactors[prime] = factorsB[prime];
+    }
+  }
+
+  return mergedFactors;
+}
+
+// Example usage:
+console.log(findLCM(12, 18)); // Output: 36
+console.log(findLCM(9, 28)); // Output: 252
+console.log(findLCM(24, 36)); // Output: 72
+```
+
+In this program, we have three functions:
+
+1. The findLCM function takes two numbers (a and b) as arguments. It first finds the prime
+   factors of both numbers using the findPrimeFactors function. Then it merges the prime
+   factors using the mergePrimeFactors function.
+
+2. The findPrimeFactors function takes a number (num) as an argument and returns an object
+   containing the prime factors and their frequencies. It iterates from 2 up to the given
+   number and checks if the number is divisible by the current iteration. If it is, it
+   adds the prime factor to the object and reduces the number by dividing it. This process
+   repeats until the number becomes 1.
+
+3. The mergePrimeFactors function takes two prime factor objects (factorsA and factorsB)
+   and merges them into a single object. It starts by creating a copy of factorsA. Then it
+   iterates over the prime factors in factorsB and checks if they exist in the merged
+   object. If they do, it updates the frequency to the maximum of the two. If they don't,
+   it adds the prime factor to the merged object.
+
+Finally, the findLCM function calculates the LCM by iterating over the merged prime
+factors. It multiplies each prime factor raised to its corresponding frequency to
+calculate the LCM.
