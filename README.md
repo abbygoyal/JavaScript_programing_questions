@@ -661,5 +661,73 @@ calculate the LCM.
 ## Q 3. Check whether the **_Given Number_** is a **_Palindrome or NOT_**.
 
 ```js
+/*
+ * Palindrome Check
+ *
+ * Check the given number is Palinndrome Number or NOT
+ *
+ * A palindrome number is a number that remains the same when
+ * its digits are reversed.
+ *
+ * Say N = 16461
+ * reverse of N = 16461
+ * N and reverse of N are same
+ * So 16461 is Palindrome number
+ *
+ * Other examples are
+ * 12321, 1001, 10101
+ *
+ * NOT a Palindrome
+ * 100, 123, 2020
+ *
+ */
 
+function isPalindrome(number) {
+  const originalNumber = number;
+  let reversedNumber = 0;
+
+  while (number > 0) {
+    const digit = number % 10;
+    reversedNumber = reversedNumber * 10 + digit;
+    number = Math.floor(number / 10);
+  }
+
+  if (originalNumber === reversedNumber) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+//Another method
+
+function isPalindrome(number) {
+  const str = number.toString();
+  const reversedStr = str.split("").reverse().join("");
+
+  return str === reversedStr;
+}
+
+// Example usage:
+console.log(isPalindrome(12321)); // Output: true
+console.log(isPalindrome(12345)); // Output: false
+console.log(isPalindrome(1221)); // Output: true
+console.log(isPalindrome(123)); // Output: false
+console.log(isPalindrome("abccba")); // Output: true
+console.log(isPalindrome("abc")); // Output: false
 ```
+
+In this program, the isPalindrome function takes a number as an argument
+and checks whether it is a palindrome.
+
+First, we store the original number in a variable originalNumber for
+comparison later. Then, we initialize reversedNumber to 0.
+
+We use a while loop to reverse the number. In each iteration, we extract the
+last digit of the number using the modulo operator (%) and add it to
+reversedNumber after multiplying it by 10. Then, we update the number by
+removing the last digit using integer division (Math.floor(number / 10)).
+
+After the loop finishes, we compare originalNumber with reversedNumber. If
+they are equal, it means the number is a palindrome, and the function returns
+true. Otherwise, it returns false.
