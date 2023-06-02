@@ -256,7 +256,7 @@ console without explicitly using a loop construct.
 
 <br/>
 
-## Q 9. Write a Java Program to print the **_digits of a Given Number_**.
+## Q 9. Write a JavaScript Program to print the **_digits of a Given Number_**.
 
 ```js
 function printDigits(number) {
@@ -338,7 +338,7 @@ it will print all the factors of that number.
 
 <br/>
 
-## Q 10. Write a Java Program to print all the **_Factors of the Given number_**.
+## Q 10. Write a JavaScript Program to print all the **_Factors of the Given number_**.
 
 ```js
 function sumOfDigits(number) {
@@ -366,7 +366,7 @@ remove the rightmost digit. This process continues until all the digits have bee
 
 <br/>
 
-## Q 11. Write a Java Program to find **_sum of the digits of a given number_**.
+## Q 11. Write a JavaScript Program to find **_sum of the digits of a given number_**.
 
 ```js
 function findSmallest(a, b, c) {
@@ -424,7 +424,7 @@ the need for explicit comparisons using if or else statements.
 
 <br/>
 
-## Q 12. Write a java program to **_Reverse a given number_**.
+## Q 12. Write a javaScript program to **_Reverse a given number_**.
 
 ```js
 function reverseNumber(number) {
@@ -458,7 +458,7 @@ This process continues until all the digits have been processed.
 
 # Numbers
 
-## Q1. Write a Java Program to find GCD of two given numbers.
+## Q1. Write a JavaScript Program to find GCD of two given numbers.
 
 ```js
 /*
@@ -499,7 +499,7 @@ found. At that point, the GCD is stored in a and returned.
 
 <br/>
 
-## Q2. Write a java program to **_LCM of TWO given number_**.
+## Q2. Write a javaScript program to **_LCM of TWO given number_**.
 
 ```js
 /*
@@ -564,7 +564,7 @@ process continues until the LCM is found.
 
 <br/>
 
-## Q3. Write a java program to **_LCM of TWO given number_** using Prime Factors method.
+## Q3. Write a javaScript program to **_LCM of TWO given number_** using Prime Factors method.
 
 ```js
 /*
@@ -736,7 +736,7 @@ true. Otherwise, it returns false.
 
 <br/>
 
-## Q 5. Write a Java Program to print all the **Prime Factors** of the Given Number.
+## Q 5. Write a JavaScript Program to print all the **Prime Factors** of the Given Number.
 
 ```js
 function printPrimeFactors(number) {
@@ -777,7 +777,7 @@ printPrimeFactors(97); // Output: 97
 
 <br/>
 
-## Q 6. Write a Java Program to check whether the Given Number is **_Prime Number or NOT_**.
+## Q 6. Write a JavaScript Program to check whether the Given Number is **_Prime Number or NOT_**.
 
 ```js
 function isPrime(number) {
