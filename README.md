@@ -657,3 +657,9 @@ In this program, we have three functions:
 Finally, the findLCM function calculates the LCM by iterating over the merged prime
 factors. It multiplies each prime factor raised to its corresponding frequency to
 calculate the LCM.
+
+## Q 3. Check whether the **_Given Number_** is a **_Palindrome or NOT_**.
+
+```js
+
+```
