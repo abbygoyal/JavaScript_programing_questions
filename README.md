@@ -236,6 +236,19 @@ console.log(isLeapYear(1900));  // Output: false
 for (let number = 1; number <= 10; number++) {
   console.log(number);
 }
+
+// Each digit of the given number will be printed on a separate line.
+
+1;
+2;
+3;
+4;
+5;
+6;
+7;
+8;
+9;
+10;
 ```
 
 <br/>
