@@ -499,8 +499,6 @@ found. At that point, the GCD is stored in a and returned.
 
 <br/>
 
-# Numbers
-
 ## Q2. Write a java program to **_LCM of TWO given number_**.
 
 ```js
