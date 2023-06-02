@@ -453,3 +453,113 @@ reversed variable by multiplying it by 10 and then adding the digit.
 After adding the digit, the number is divided by 10
 (number = Math.floor(number / 10)) to remove the rightmost digit.
 This process continues until all the digits have been processed.
+
+<br/>
+
+# Numbers
+
+## Q1. Write a Java Program to find GCD of two given numbers.
+
+```js
+/*
+ * Find GCD of two numbers
+ * GCD :: Greatest Common Divisor
+ * The HCF or GCD of two numbers is the largest number
+ * that can divide both numbers without reminder.
+ *
+ * Number a = 45 = 3 * 3 * 5
+ * Number b = 75 = 3 * 5 * 5
+ * GCD is = 3 * 5 = 15
+ */
+
+function findGCD(a, b) {
+  while (b !== 0) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}
+
+// Example usage:
+console.log(findGCD(12, 18)); // Output: 6
+console.log(findGCD(9, 28)); // Output: 1
+console.log(findGCD(24, 36)); // Output: 12
+```
+
+In this program, the findGCD function takes two numbers (a and b) as arguments.
+It uses the Euclidean algorithm to find the GCD of the two numbers.
+
+The algorithm starts by initializing a temporary variable temp to store the value
+of b. Then, b is updated with the remainder of dividing a by b using the modulo
+operator (%). Finally, a is updated with the value stored in temp.
+
+This process continues until b becomes zero, indicating that the GCD has been
+found. At that point, the GCD is stored in a and returned.
+
+<br/>
+
+# Numbers
+
+## Q2. Write a java program to **_LCM of TWO given number_**.
+
+```js
+/*
+ * 	LCM - Least Common Multiple
+ *
+ * The LCM of two integers is the smallest
+ * positive integer that is perfectly divisible
+ * by both the numbers without a reminder.
+ * (means reminder should be zero)
+ *
+ * say n1 = 12 and n2 = 15
+ * 12 & 15 can divide 60, 120, 180 ...
+ * but the smallest number is 60
+ * LCM of 12 & 15 is 60
+ *
+ * steps
+ * 1. get the minimum of n1 & n2
+ * 2. assume the maximum is LCM
+ * 3. increment the lcm upto both n1 & n2
+ * perfectly divides the LCM.
+ *
+ * n1 = 10 and n2 = 6
+ * 10 and 6 can divide 30, 60, 90 ...
+ * but the smallest number is 30
+ * LCM of 10 & 6 is 30
+ *
+ */
+
+function findLCM(a, b) {
+  let max = Math.max(a, b);
+  let lcm = max;
+
+  while (true) {
+    if (lcm % a === 0 && lcm % b === 0) {
+      break;
+    }
+    lcm += max;
+  }
+
+  return lcm;
+}
+
+// Example usage:
+console.log(findLCM(12, 18)); // Output: 36
+console.log(findLCM(9, 28)); // Output: 252
+console.log(findLCM(24, 36)); // Output: 72
+```
+
+In this program, the findLCM function takes two numbers (a and b) as arguments.
+It starts by finding the maximum of the two numbers using the Math.max function
+and assigns it to the variable max.
+
+The initial value of the LCM is set to max. The program enters a while loop that
+continues until the LCM is found.
+
+Within each iteration, it checks if the LCM is divisible by both a and b using the
+modulo operator (%). If it is, it means that the current LCM is the least common
+multiple, and the loop is exited.
+
+If the LCM is not divisible by both a and b, it is incremented by max. This
+process continues until the LCM is found.
