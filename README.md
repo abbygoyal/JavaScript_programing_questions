@@ -233,26 +233,10 @@ console.log(isLeapYear(1900));  // Output: false
 ## Q 8. Write a JavaScript Program to Print 1 To 10 Without Using Loop.
 
 ```js
-function isLeapYear(year) {
-  return new Date(year, 1, 29).getDate() === 29;
+for (let number = 1; number <= 10; number++) {
+  console.log(number);
 }
-
-// Example usage:
-console.log(isLeapYear(2020)); // Output: true
-console.log(isLeapYear(2021)); // Output: false
-console.log(isLeapYear(2000)); // Output: true
-console.log(isLeapYear(1900)); // Output: false
 ```
-
-In this program, the printNumbers function takes a number n as an argument.
-It uses a recursive approach to print the current number and then calls
-itself with the next number (n + 1) until n reaches 10.
-
-By initially calling the printNumbers function with the starting number 1,
-it will recursively print the numbers from 1 to 10 without using a loop.
-
-When you run this program, it will output the numbers 1 to 10 in the
-console without explicitly using a loop construct.
 
 <br/>
 
