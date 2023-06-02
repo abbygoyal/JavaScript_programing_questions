@@ -49,7 +49,7 @@ console.log(checkEvenOrOdd(7)); // Output: Odd
 
 <br/>
 
-## Q 2. Check the given number is **_EVEN or ODD_**.
+## Q 2. Write a JavaScript Program to find the **_Factorial_** of given number.
 
 ```js
 function calculateFactorial(number) {
