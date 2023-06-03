@@ -1420,3 +1420,49 @@ In the example usage, we define two arrays array1 and array2 and call the
 findUnion function with these arrays. The union of the arrays is stored in
 the result variable and printed to the console, which will output
 [1, 3, 4, 5, 8, 7, 9] in this case.
+
+<br/>
+
+## Q 8. Write a Java Program to **_Move all Zero to End of the Array_**.
+
+```js
+function moveZerosToEnd(arr) {
+  let count = 0; // Count of non-zero elements
+
+  // Traverse the array and move non-zero elements to the front
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] !== 0) {
+      arr[count] = arr[i];
+      count++;
+    }
+  }
+
+  // Fill the remaining positions with zeros
+  while (count < arr.length) {
+    arr[count] = 0;
+    count++;
+  }
+
+  return arr;
+}
+
+// Example usage:
+const numbers = [0, 5, 0, 3, 8, 0, 9];
+const result = moveZerosToEnd(numbers);
+console.log(result); // Output: [5, 3, 8, 9, 0, 0, 0]
+```
+
+We traverse the array using a loop. If the current element is non-zero,
+we move it to the front of the array by assigning it to the position
+indicated by the count variable. Then, we increment the count.
+
+After moving all non-zero elements to the front, we fill the remaining
+positions of the array with zeros using another loop that starts from the
+count variable and goes up to the length of the array.
+
+Finally, we return the modified array with zeros moved to the end.
+
+In the example usage, we define an array of numbers numbers and call the
+moveZerosToEnd function with this array. The modified array with zeros
+moved to the end is stored in the result variable and printed to the
+console, which will output [5, 3, 8, 9, 0, 0, 0] in this case.
