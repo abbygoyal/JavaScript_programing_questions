@@ -807,7 +807,7 @@ console.log(isPrime(28)); // Output: false
 
 <br/>
 
-## Q 7 . Write a Java Program to print **_Prime Numbers from 1 to N_**.
+## Q 7 . Write a JavaScript Program to print **_Prime Numbers from 1 to N_**.
 
 ```js
 function isPrime(number) {
@@ -860,3 +860,107 @@ In the example, the number N is set to 20 to test the function. You
 can replace it with any other positive integer to print the prime
 numbers from 1 to that number. The program will print the prime
 numbers in the given range.
+
+<br/>
+
+## Q 8 . Write a Java Program to check whether the given number is **Armstrong Number** or NOT.
+
+```js
+function isArmstrongNumber(number) {
+  const digits = [];
+  let temp = number;
+  const numLength = number.toString().length;
+
+  while (temp > 0) {
+    const digit = temp % 10;
+    digits.push(digit);
+    temp = Math.floor(temp / 10);
+  }
+
+  const sum = digits.reduce((acc, curr) => acc + Math.pow(curr, numLength), 0);
+
+  return sum === number;
+}
+
+// Test the function
+const number = 153;
+if (isArmstrongNumber(number)) {
+  console.log(`${number} is an Armstrong number.`);
+} else {
+  console.log(`${number} is not an Armstrong number.`);
+}
+
+//Output
+// 153 is an Armstrong number.
+```
+
+1. Convert the number to a string and determine the number of digits in
+   the number by using the length property.
+2. Initialize an empty array called digits to store the individual digits
+   of the number.
+3. Extract each digit from the number using the modulo operator (%) and
+   divide the number by 10 in each iteration until the number becomes 0.
+   Store the digits in the digits array.
+4. Calculate the sum of each digit raised to the power of the number of
+   digits using the reduce method.
+5. Finally, check if the sum is equal to the original number. If it is,
+   then the number is an Armstrong number.
+
+<br/>
+
+## Q 9 . Write a Java Program to check whether the given number is **Perfect Number** or NOT.
+
+```js
+function isPerfectNumber(number) {
+  if (number <= 0) {
+    return false;
+  }
+
+  let sum = 0;
+
+  for (let i = 1; i < number; i++) {
+    if (number % i === 0) {
+      sum += i;
+    }
+  }
+
+  return sum === number;
+}
+
+// Example usage
+const number = 28;
+if (isPerfectNumber(number)) {
+  console.log(number + " is a perfect number.");
+} else {
+  console.log(number + " is not a perfect number.");
+}
+```
+
+In this program, the isPerfectNumber function takes a number as input and
+checks whether it is a perfect number or not. A perfect number is a
+positive integer that is equal to the sum of its proper divisors
+(excluding the number itself).
+
+The function first checks if the number is less than or equal to 0, in
+which case it immediately returns false. Then, it initializes a variable
+sum to 0, which will be used to store the sum of the proper divisors.
+
+The program uses a for loop to iterate through all the numbers from 1 to
+number - 1. For each iteration, it checks if number is divisible by the
+current number i. If it is, then i is a proper divisor, so it adds it to
+the sum variable.
+
+Finally, the function checks if the sum is equal to the number. If they
+are equal, it means that the number is a perfect number, and the function
+returns true. Otherwise, it returns false.
+
+In the example usage, we check whether the number 28 is a perfect number
+using the isPerfectNumber function and log the result to the console.
+
+<br/>
+
+## Q 10 . Write a Java Program to print **Perfect Numbers** between 1 to 1000.
+
+```js
+
+```
