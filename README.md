@@ -1262,7 +1262,7 @@ in this case.
 
 <br/>
 
-## Q 5. Write a Java Program to find the **_Intersection of two arrays._**
+## Q 5. Write a JavaScript Program to find the **_Intersection of two arrays._**
 
 ```js
 function findIntersection(arr1, arr2) {
@@ -1314,7 +1314,7 @@ in this case.
 
 <br/>
 
-## Q 6. Write a Java Program to find the **_Intersection of Two Sorted_** arrays.
+## Q 6. Write a JavaScript Program to find the **_Intersection of Two Sorted_** arrays.
 
 ```js
 function findIntersection(arr1, arr2) {
@@ -1355,3 +1355,68 @@ If arr1[i] is larger than arr2[j], we increment j to move to the next element in
 We repeat this process until we reach the end of either arr1 or arr2. Finally, we return the intersection array.
 
 In the example usage, we define two sorted arrays array1 and array2 and call the findIntersection function with these arrays. The result is stored in the result variable and printed to the console, which will output [3, 5] in this case.
+
+<br/>
+
+## Q 7. Write a JavaScript Program to find the **_Union of Two Arrays (UnSorted Array)_**.
+
+```js
+/*
+ * Union Of Two Arrays
+ * -------------------
+ * The Union of Two Arrays Array1, Array2 is the
+ * new array which contains all the elements which are
+ * either in array1 or in array2, or in both arrays.
+ *
+ * array1 = {17, 23, 31, 14, 25, 26};
+ * array2 = {23, 44, 14, 8, 17};
+ *
+ * 17, 14 and 23 are present in both arrays
+ * UnionArray should contain only one time
+ *
+ * 31, 25 & 26 are present only in array1
+ * all these elements should present in UnionArray
+ *
+ * 44 & 8 are present only in array2
+ * all these elements should present in UnionArray
+ *
+ * UnionArray = {17, 23, 31, 14, 25, 26, 44, 8};
+ *
+ */
+
+function findUnion(arr1, arr2) {
+  const union = [...arr1]; // Copy arr1 to union array
+
+  // Add elements from arr2 to union if they are not already present
+  for (let i = 0; i < arr2.length; i++) {
+    if (!union.includes(arr2[i])) {
+      union.push(arr2[i]);
+    }
+  }
+
+  return union;
+}
+
+// Example usage:
+const array1 = [1, 3, 4, 5, 8];
+const array2 = [3, 5, 7, 9];
+const result = findUnion(array1, array2);
+console.log(result); // Output: [1, 3, 4, 5, 8, 7, 9]
+```
+
+In this program, we create a new array union and initially copy all the
+elements from arr1 to union using the spread operator ([...arr1]).
+
+Next, we iterate through each element in arr2. If the element is not already
+present in union (checked using the includes method), we add it to the
+union array using the push method.
+
+After processing all the elements in arr2, we have a new array union
+containing all the unique elements from both arr1 and arr2.
+
+Finally, we return the union array.
+
+In the example usage, we define two arrays array1 and array2 and call the
+findUnion function with these arrays. The union of the arrays is stored in
+the result variable and printed to the console, which will output
+[1, 3, 4, 5, 8, 7, 9] in this case.
