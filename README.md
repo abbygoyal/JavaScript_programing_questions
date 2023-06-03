@@ -30,8 +30,6 @@
 
 # Basic Programs
 
-<br/>
-
 ## Q 1. Check the given number is **_EVEN or ODD_**.
 
 ```js
@@ -85,18 +83,6 @@ of 120 and 1, respectively.
 ## Q 3. Find the **_Factorial_** of a number using **_Recursion_** .
 
 ```js
-function calculateFactorialRecursive(number) {
-  if (number === 0 || number === 1) {
-    return 1;
-  } else {
-    return number * calculateFactorialRecursive(number - 1);
-  }
-}
-
-// Example usage:
-console.log(calculateFactorialRecursive(5)); // Output: 120
-console.log(calculateFactorialRecursive(0)); // Output: 1
-
 /*
  Factorial Using Recursion
 
@@ -118,6 +104,18 @@ console.log(calculateFactorialRecursive(0)); // Output: 1
   1! = 1
 
  */
+
+function calculateFactorialRecursive(number) {
+  if (number === 0 || number === 1) {
+    return 1;
+  } else {
+    return number * calculateFactorialRecursive(number - 1);
+  }
+}
+
+// Example usage:
+console.log(calculateFactorialRecursive(5)); // Output: 120
+console.log(calculateFactorialRecursive(0)); // Output: 1
 ```
 
 <br/>
@@ -335,7 +333,7 @@ it will print all the factors of that number.
 
 <br/>
 
-## Q 10. Write a JavaScript Program to print all the **_Factors of the Given number_**.
+## Q 10. Write a JavaScript Program to find **_sum of the digits of a given number_**.
 
 ```js
 function sumOfDigits(number) {
@@ -363,7 +361,7 @@ remove the rightmost digit. This process continues until all the digits have bee
 
 <br/>
 
-## Q 11. Write a JavaScript Program to find **_sum of the digits of a given number_**.
+## Q 11. Write a Java Program to find the **_smallest of 3 numbers_** (a,b,c) without using < or > symbol?
 
 ```js
 function findSmallest(a, b, c) {
@@ -1160,3 +1158,65 @@ In the example usage, we define an array of numbers numbers and call the
 findSecondLargest function with this array. The second largest number is
 stored in the secondLargest variable and printed to the console, which will
 output 8 in this case.
+
+<br/>
+
+## Q 3. Find the second minimum number in the given array.
+
+```js
+function findSecondMinimum(arr) {
+  if (arr.length < 2) {
+    return "Array should have at least two numbers";
+  }
+
+  let minimum = Infinity;
+  let secondMinimum = Infinity;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < minimum) {
+      secondMinimum = minimum;
+      minimum = arr[i];
+    } else if (arr[i] < secondMinimum && arr[i] !== minimum) {
+      secondMinimum = arr[i];
+    }
+  }
+
+  if (secondMinimum === Infinity) {
+    return "There is no second minimum number";
+  }
+
+  return secondMinimum;
+}
+
+// Example usage:
+const numbers = [4, 8, 6, 2, 9];
+const secondMinimum = findSecondMinimum(numbers);
+console.log(secondMinimum); // Output: 4
+```
+
+First, we perform a check to ensure that the array has at least two numbers.
+If the length of the array is less than 2, we return a message indicating
+that the array should have at least two numbers.
+
+Next, we initialize two variables, minimum and secondMinimum, to store the
+minimum and second minimum numbers in the array, respectively. We initialize
+them with Infinity to handle cases where the array contains large positive
+numbers.
+
+We then loop through each element in the array. If an element is smaller
+than the current minimum, we update secondMinimum with the previous value of
+minimum, and update minimum with the new element.
+
+If an element is smaller than the current secondMinimum but not equal to
+minimum, we update secondMinimum with the new element.
+
+After the loop, we check if secondMinimum remains as Infinity, which means
+there is no second minimum number in the array. In that case, we return a
+message indicating that there is no second minimum number.
+
+Otherwise, we return the secondMinimum number.
+
+In the example usage, we define an array of numbers numbers and call the
+findSecondMinimum function with this array. The second minimum number is
+stored in the secondMinimum variable and printed to the console, which will
+output 4 in this case.
