@@ -1645,3 +1645,135 @@ We called the findMostFrequentElement function with these parameters.
 The most frequent element and its occurrence count are stored in
 the result variable and printed to the console, which will output
 { element: 30, frequency: 3 } in this case.
+
+<br/>
+
+## Q 13. Write a javaScript program to **_Rotate the Given Array_** d times.
+
+```js
+function Rotate_and_Print(arr, d, n) {
+  //Initializing array temp with size n
+  var temp = new Array(n);
+
+  let k = 0;
+
+  // Storing the n - d elements of
+  // array arr[] to the front of temp[]
+  for (let i = d; i < n; i++) {
+    temp[k] = arr[i];
+    k++;
+  }
+
+  // Storing the first d elements of array arr[]
+  //  into temp
+  for (let i = 0; i < d; i++) {
+    temp[k] = arr[i];
+    k++;
+  }
+  //Printing the temp array which stores the result
+  for (let i = 0; i < n; i++) {
+    console.log(temp[i] + " ");
+  }
+}
+
+let arr = [1, 2, 3, 4, 5, 6, 7];
+let n = arr.length;
+let d = 2; //number of times rotating the array
+Rotate_and_Print(arr, d, n); // 3 4 5 6 7 1 2
+```
+
+1. initialize a temporary array(temp[n]) of length same as the original array
+2. Initialize an integer(k) to keep a track of the current index
+3. Store the elements from the position d to n-1 in the temporary array
+4. Now, store 0 to d-1 elements of the original array in the temporary array 5. Lastly, copy back the temporary array to the original array
+
+<br/>
+
+# String Based Programs
+
+## Q 1. Write a javaScript program to **_Reverse the String_** d times.
+
+```js
+function reverseString(str) {
+  // Split the string into an array of characters, reverse the array, and join the characters back into a string
+  return str.split("").reverse().join("");
+}
+
+// Example usage
+const originalString = "Abhishek";
+const reversedString = reverseString(originalString);
+
+console.log("Reversed string:", reversedString); // "Reversed string:", "kehsihbA"
+
+//Another Approach
+
+function reverseString(str) {
+  let reversedStr = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
+  return reversedStr;
+}
+
+// Example usage
+const originalString = "Abhishek";
+const reversedString = reverseString(originalString);
+
+console.log("Reversed string:", reversedString); // "Reversed string:", "kehsihbA"
+```
+
+<br/>
+
+## Q 2. Write a javaScript program to **_Sort the String_** d times.
+
+```js
+function sortString(str) {
+  // Convert the string into an array of characters
+  let arr = str.split("");
+
+  // Sort the array in alphabetical order
+  arr.sort();
+
+  // Convert the sorted array back into a string
+  let sortedStr = arr.join("");
+
+  return sortedStr;
+}
+
+// Test the function
+let stringToSort = "Abhishek";
+let sortedString = sortString(stringToSort);
+console.log(sortedString); //Abehhiks
+```
+
+<br/>
+
+## Q 3. Write a javaScript program to **_Count the Number of Words_** in a given String.
+
+```js
+function countWords(str) {
+  // Remove leading and trailing white spaces
+  str = str.trim();
+
+  // If the string is empty, return 0
+  if (str === "") {
+    return 0;
+  }
+
+  // Split the string into an array of words
+  const words = str.split(/\s+/);
+
+  // Return the number of words in the array
+  return words.length;
+}
+
+// Example usage:
+const inputString = "Hello, how are you doing today?";
+const wordCount = countWords(inputString);
+console.log("Number of words:", wordCount); // "Number of words:", 6
+```
+
+1. It trims the string to remove any leading or trailing white spaces.
+2. If the trimmed string is empty, it returns 0 as there are no words.
+3. Otherwise, it splits the string into an array of words using the regular expression /\s+/, which matches one or more consecutive white spaces.
+4. Finally, it returns the length of the array, which represents the number of words in the string.
