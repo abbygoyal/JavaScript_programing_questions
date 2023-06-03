@@ -1561,3 +1561,87 @@ In the example usage, we define an array of numbers numbers and call
 the reverseArray function with this array. The reversed array is
 stored in the result variable and printed to the console, which
 will output [5, 4, 3, 2, 1] in this case.
+
+<br/>
+
+## Q 11. Write a program to find the **_Most Frequent Element_** in an given array.
+
+```js
+function mostFrequent(arr, n) {
+  let maxcount = 0;
+  let element_having_max_freq;
+  for (let i = 0; i < n; i++) {
+    let count = 0;
+    for (let j = 0; j < n; j++) {
+      if (arr[i] == arr[j]) count++;
+    }
+
+    if (count > maxcount) {
+      maxcount = count;
+      element_having_max_freq = arr[i];
+    }
+  }
+
+  return element_having_max_freq;
+}
+
+// Output
+
+let arr = [40, 50, 30, 40, 50, 30, 30];
+let n = arr.length;
+console.log(mostFrequent(arr, n)); //30
+```
+
+<br/>
+
+## Q 12. Write a program to find the **_Most Frequent Element_with occurrence_** in an given array.
+
+```js
+function findMostFrequentElement(arr, n) {
+  let maxCount = 0;
+  let elementWithMaxFreq;
+
+  for (let i = 0; i < n; i++) {
+    let count = 0;
+
+    for (let j = 0; j < n; j++) {
+      if (arr[i] == arr[j]) count++;
+    }
+
+    if (count > maxCount) {
+      maxCount = count;
+      elementWithMaxFreq = arr[i];
+    }
+  }
+
+  return { element: elementWithMaxFreq, frequency: maxCount };
+}
+
+// Example usage:
+const arr = [40, 50, 30, 40, 50, 30, 30];
+const n = arr.length;
+const result = findMostFrequentElement(arr, n);
+console.log(result); // Output: { element: 30, frequency: 3 }
+```
+
+In this code, we have modified the mostFrequent function to calculate
+the frequency count of each element in the array.
+
+We introduced two variables: maxCount to keep track of the maximum
+count and elementWithMaxFreq to store the element with the highest
+frequency.
+
+We used two nested loops to compare each element with every other
+element in the array and count the occurrences.
+
+If the count is greater than the current maxCount, we update both
+maxCount and elementWithMaxFreq accordingly.
+
+Finally, we return an object containing the most frequent element
+and its occurrence count.
+
+In the example usage, we defined an array arr and its length n.
+We called the findMostFrequentElement function with these parameters.
+The most frequent element and its occurrence count are stored in
+the result variable and printed to the console, which will output
+{ element: 30, frequency: 3 } in this case.
