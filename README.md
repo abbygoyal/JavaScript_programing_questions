@@ -1827,6 +1827,27 @@ console.log("Number of vowels:", vowelCount); // "Number of vowels:", 15
 ```js
 const maxChar = (str) => {
   const strObj = {};
+  let maxCount = 0;
+  let maxChar = "";
+  for (let char of str) {
+    strObj[char] = strObj[char] + 1 || 1;
+  }
+  for (let key in strObj) {
+    if (strObj[key] > maxCount) {
+      maxCount = strObj[key];
+      maxChar = key;
+    }
+  }
+  return maxChar;
+};
+
+// a
+console.log(maxChar("abhishek"));
+
+// another approach
+
+const maxChar = (str) => {
+  const strObj = {};
   for (let char of str) {
     strObj[char] = strObj[char] + 1 || 1;
   }
@@ -1834,3 +1855,80 @@ const maxChar = (str) => {
 };
 console.log(maxChar("abhishek")); //{  a: 1,  b: 1,  e: 1,  h: 2,  i: 1,  k: 1,  s: 1}
 ```
+
+We will keep track of two variables: maxCount & maxChar.
+Then, we will loop through the object and compare the value of
+each key to maxCount. If the value is greater than the value of
+maxCount, then, we will assign that value to maxCount and the
+key to maxChar. At the end of the loop, maxChar will be the
+most common character in the input string.
+
+<br/>
+
+## Q 6. Write a Java Program to **_Print All Combinations_** of a given String.
+
+```js
+function printCombinations(str) {
+  // Create an array to store the combinations
+  const combinations = [];
+
+  // Recursive function to generate combinations
+  function generateCombinations(prefix, remaining) {
+    if (remaining.length === 0) {
+      combinations.push(prefix);
+      return;
+    }
+
+    for (let i = 0; i < remaining.length; i++) {
+      const newPrefix = prefix + remaining[i];
+      const newRemaining = remaining.slice(0, i) + remaining.slice(i + 1);
+      generateCombinations(newPrefix, newRemaining);
+    }
+  }
+
+  // Start the recursion with an empty prefix and the original string
+  generateCombinations("", str);
+
+  // Print the combinations
+  for (let combination of combinations) {
+    console.log(combination);
+  }
+}
+
+// Example usage:
+const inputString = "abc";
+printCombinations(inputString);
+
+// "abc"
+// "acb"
+// "bac"
+// "bca"
+// "cab"
+// "cba"
+```
+
+1. It creates an empty array (combinations) to store the generated
+   combinations.
+2. It defines a recursive function (generateCombinations) that takes
+   a prefix and the remaining characters as input.
+3. If there are no remaining characters (remaining.length === 0),
+   it means a combination has been formed, so the prefix is added to
+   the combinations array.
+4. Otherwise, it iterates over each character in the remaining string
+   and performs the following steps:
+   4.1 It creates a new prefix by appending the current character to
+   the existing prefix.
+   4.2 It creates a new remaining string by removing the current
+   character from the remaining string.
+   4.3 It recursively calls the generateCombinations function with
+   the new prefix and new remaining string.
+5. The recursion starts with an empty prefix and the original string
+   (generateCombinations("", str)).
+6. After generating all the combinations, it prints each combination
+   by iterating over the combinations array.
+
+</br>
+
+# Converters
+
+## Q 1. Convert Decimal Number to Binary Number.
