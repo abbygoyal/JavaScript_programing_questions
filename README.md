@@ -1466,3 +1466,50 @@ In the example usage, we define an array of numbers numbers and call the
 moveZerosToEnd function with this array. The modified array with zeros
 moved to the end is stored in the result variable and printed to the
 console, which will output [5, 3, 8, 9, 0, 0, 0] in this case.
+
+<br/>
+
+## Q 9. Write a Java Program to **_Move all Zeros to Start of the Array_**.
+
+```js
+function moveZerosToStart(arr) {
+  let count = arr.length - 1; // Count of non-zero elements starting from the end
+
+  // Traverse the array from the end and move non-zero elements to the back
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i] !== 0) {
+      arr[count] = arr[i];
+      count--;
+    }
+  }
+
+  // Fill the remaining positions from the start with zeros
+  while (count >= 0) {
+    arr[count] = 0;
+    count--;
+  }
+
+  return arr;
+}
+
+// Example usage:
+const numbers = [0, 5, 0, 3, 8, 0, 9];
+const result = moveZerosToStart(numbers);
+console.log(result); // Output: [0, 0, 0, 5, 3, 8, 9]
+```
+
+We traverse the array using a loop that starts from the end and goes
+backwards. If the current element is non-zero, we move it to the back of
+the array by assigning it to the position indicated by the count variable.
+Then, we decrement the count.
+
+After moving all non-zero elements to the back, we fill the remaining
+positions of the array from the start with zeros using another loop
+that starts from the count variable and goes down to 0.
+
+Finally, we return the modified array with zeros moved to the start.
+
+In the example usage, we define an array of numbers numbers and call the
+moveZerosToStart function with this array. The modified array with
+zeros moved to the start is stored in the result variable and printed
+to the console, which will output [0, 0, 0, 5, 3, 8, 9] in this case.
