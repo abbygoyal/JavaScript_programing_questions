@@ -40,6 +40,8 @@ console.log(checkEvenOrOdd(4)); // Output: Even
 console.log(checkEvenOrOdd(7)); // Output: Odd
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 2. Write a JavaScript Program to find the **_Factorial_** of given number.
