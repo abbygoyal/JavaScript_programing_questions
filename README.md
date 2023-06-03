@@ -1218,3 +1218,44 @@ In the example usage, we define an array of numbers numbers and call the
 findSecondMinimum function with this array. The second minimum number is
 stored in the secondMinimum variable and printed to the console, which will
 output 4 in this case.
+
+<br/>
+
+## Q 4. Find the missing Number in the given array of 1 to N.
+
+```js
+function findMissingNumber(arr) {
+  const n = arr.length + 1; // The length of the array is missing one number
+  const totalSum = (n * (n + 1)) / 2; // Sum of numbers from 1 to N
+  let arraySum = 0;
+
+  for (let i = 0; i < arr.length; i++) {
+    arraySum += arr[i];
+  }
+
+  const missingNumber = totalSum - arraySum;
+  return missingNumber;
+}
+
+// Example usage:
+const numbers = [1, 2, 4, 5, 6];
+const missingNumber = findMissingNumber(numbers);
+console.log(missingNumber); // Output: 3
+```
+
+We calculate the expected sum of numbers from 1 to N using the formula
+(N \* (N + 1)) / 2, where N is the length of the array plus one since it is
+missing one number.
+
+Next, we iterate through each element in the array and calculate the sum of
+all the numbers in the array.
+
+The missing number can be found by subtracting the sum of the array from the
+total expected sum.
+
+Finally, we return the missing number.
+
+In the example usage, we define an array of numbers numbers and call the
+findMissingNumber function with this array. The missing number is stored in
+the missingNumber variable and printed to the console, which will output 3
+in this case.
