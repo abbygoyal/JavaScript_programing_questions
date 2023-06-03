@@ -1932,3 +1932,182 @@ printCombinations(inputString);
 # Converters
 
 ## Q 1. Convert Decimal Number to Binary Number.
+
+```js
+function decimalToBinary(decimalNumber) {
+  // Use toString() with radix 2 to convert decimal to binary
+  const binaryNumber = decimalNumber.toString(2);
+  return binaryNumber;
+}
+
+// Example usage:
+const decimal = 10;
+const binary = decimalToBinary(decimal);
+console.log("Binary representation:", binary);
+```
+
+1. It uses the toString() method on the decimalNumber to convert it to a string representation.
+2. The toString() method accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 2 to indicate binary representation.
+3. The function then returns the binary representation of the decimal number.
+
+</br>
+
+## Q 2. Convert Binary Number to Decimal Number.
+
+```js
+function binaryToDecimal(binaryNumber) {
+  // Use parseInt() with radix 2 to convert binary to decimal
+  const decimalNumber = parseInt(binaryNumber, 2);
+  return decimalNumber;
+}
+
+// Example usage:
+const binary = "1010";
+const decimal = binaryToDecimal(binary);
+console.log("Decimal representation:", decimal);
+```
+
+1. It uses the parseInt() function to parse the binaryNumber as an integer.
+2. The parseInt() function accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 2 to indicate binary representation.
+3. The function then returns the decimal representation of the binary number.
+
+</br>
+
+## Q 3. Convert Decimal Number to Octal Number.
+
+```js
+function decimalToOctal(decimalNumber) {
+  // Use toString() with radix 8 to convert decimal to octal
+  const octalNumber = decimalNumber.toString(8);
+  return octalNumber;
+}
+
+// Example usage:
+const decimal = 25;
+const octal = decimalToOctal(decimal);
+console.log("Octal representation:", octal);
+```
+
+1. It uses the toString() method on the decimalNumber to convert it to a string representation.
+2. The toString() method accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 8 to indicate octal representation.
+3. The function then returns the octal representation of the decimal number.
+
+</br>
+
+## Q 4. Convert Octal Number to Decimal Number.
+
+```js
+function octalToDecimal(octalNumber) {
+  // Use parseInt() with radix 8 to convert octal to decimal
+  const decimalNumber = parseInt(octalNumber, 8);
+  return decimalNumber;
+}
+
+// Example usage:
+const octal = "37";
+const decimal = octalToDecimal(octal);
+console.log("Decimal representation:", decimal);
+```
+
+1. It uses the parseInt() function to parse the octalNumber as an integer.
+2. The parseInt() function accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 8 to indicate octal representation.
+3. The function then returns the decimal representation of the octal number.
+
+</br>
+
+## Q 5. Convert Decimal to Hexadecimal.
+
+```js
+function decimalToHexadecimal(decimalNumber) {
+  // Use toString() with radix 16 to convert decimal to hexadecimal
+  const hexadecimalNumber = decimalNumber.toString(16);
+  return hexadecimalNumber;
+}
+
+// Example usage:
+const decimal = 255;
+const hexadecimal = decimalToHexadecimal(decimal);
+console.log("Hexadecimal representation:", hexadecimal);
+```
+
+1. It uses the toString() method on the decimalNumber to convert it to a string representation.
+2. The toString() method accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 16 to indicate hexadecimal representation.
+3. The function then returns the hexadecimal representation of the decimal number.
+
+</br>
+
+## Q 6. Convert Hexadecimal to Decimal.
+
+```js
+function hexadecimalToDecimal(hexadecimalNumber) {
+  // Use parseInt() with radix 16 to convert hexadecimal to decimal
+  const decimalNumber = parseInt(hexadecimalNumber, 16);
+  return decimalNumber;
+}
+
+// Example usage:
+const hexadecimal = "FF";
+const decimal = hexadecimalToDecimal(hexadecimal);
+console.log("Decimal representation:", decimal);
+```
+
+1. It uses the parseInt() function to parse the hexadecimalNumber as an integer.
+2. The parseInt() function accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 16 to indicate hexadecimal representation.
+3. The function then returns the decimal representation of the hexadecimal number.
+
+</br>
+
+## Q 7. Convert Hexadecimal to Decimal.
+
+```js
+function hexadecimalToDecimal(hexadecimalNumber) {
+  // Use parseInt() with radix 16 to convert hexadecimal to decimal
+  const decimalNumber = parseInt(hexadecimalNumber, 16);
+  return decimalNumber;
+}
+
+// Example usage:
+const hexadecimal = "FF";
+const decimal = hexadecimalToDecimal(hexadecimal);
+console.log("Decimal representation:", decimal);
+```
+
+1. It uses the parseInt() function to parse the hexadecimalNumber as an integer.
+2. The parseInt() function accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 16 to indicate hexadecimal representation.
+3. The function then returns the decimal representation of the hexadecimal number.
+
+</br>
+
+## Q 7. Convert Octal to Binary Number.
+
+```js
+function octalToBinary(octalNumber) {
+  let binaryNumber = "";
+
+  // Iterate over each octal digit
+  for (let i = 0; i < octalNumber.length; i++) {
+    const octalDigit = parseInt(octalNumber[i], 8);
+
+    // Convert octal digit to 3-digit binary representation
+    const binaryDigit = octalDigit.toString(2).padStart(3, "0");
+
+    // Concatenate binary digit to the binary number
+    binaryNumber += binaryDigit;
+  }
+
+  return binaryNumber;
+}
+
+// Example usage:
+const octal = "73";
+const binary = octalToBinary(octal);
+console.log("Binary representation:", binary);
+```
+
+1. It initializes an empty string (binaryNumber) to store the binary representation.
+2. It iterates over each octal digit in the octalNumber.
+3. For each octal digit, it parses it as an integer using parseInt() with a radix of 8 to get the decimal value of the digit.
+4. It converts the decimal value of the octal digit to its 3-digit binary representation using toString() with a radix of 2.
+5. If the binary representation is less than 3 digits, it pads it with leading zeros using padStart() to ensure it has exactly 3 digits.
+6. It concatenates the binary representation of each octal digit to the binaryNumber string.
+7. Finally, it returns the resulting binary number.
