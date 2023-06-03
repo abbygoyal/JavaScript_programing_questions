@@ -9,7 +9,6 @@ Preparing for a JavaScript interview can be a challenging task, as it requires a
 
 In this blog, we will cover a range of topics, including variable scoping, hoisting, closures, event handling, prototypal inheritance, Promises, and arrow functions. Each question will be explained in a concise and clear manner, ensuring you grasp the core concepts and can confidently discuss them during your interview. Additionally, we'll provide sample code snippets and explanations to enhance your understanding and enable you to apply these concepts in real-world scenarios.
 
-<br/>
 
 By familiarizing yourself with these JavaScript programming questions, you'll gain the confidence to tackle technical interviews and impress potential employers. Remember, the key to success lies in practice and continuous learning. So, let's embark on this journey together and sharpen your JavaScript skills for your next interview.
 <br/>
