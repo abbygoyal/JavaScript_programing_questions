@@ -2078,7 +2078,7 @@ console.log("Decimal representation:", decimal);
 
 </br>
 
-## Q 7. Convert Octal to Binary Number.
+## Q 8. Convert Octal to Binary Number.
 
 ```js
 function octalToBinary(octalNumber) {
@@ -2111,3 +2111,47 @@ console.log("Binary representation:", binary);
 5. If the binary representation is less than 3 digits, it pads it with leading zeros using padStart() to ensure it has exactly 3 digits.
 6. It concatenates the binary representation of each octal digit to the binaryNumber string.
 7. Finally, it returns the resulting binary number.
+
+</br>
+
+## Q 8. Convert Binary Number to Octal.
+
+```js
+// 1. Group the binary digits in sets of three digits starting from the rightmost side.
+// 2. Convert each set of three binary digits to their equivalent octal digit.
+// 3. Concatenate the octal digits to form the octal number.
+
+function binaryToOctal(binaryNumber) {
+  let octalNumber = "";
+
+  // Pad the binary number with leading zeros to make it divisible by 3
+  const paddingLength =
+    binaryNumber.length % 3 === 0 ? 0 : 3 - (binaryNumber.length % 3);
+  const paddedBinaryNumber = "0".repeat(paddingLength) + binaryNumber;
+
+  // Group the binary digits in sets of three from right to left
+  for (let i = paddedBinaryNumber.length - 1; i >= 0; i -= 3) {
+    const binaryDigits = paddedBinaryNumber.substring(
+      Math.max(i - 2, 0),
+      i + 1
+    );
+    const octalDigit = parseInt(binaryDigits, 2).toString(8);
+    octalNumber = octalDigit + octalNumber;
+  }
+
+  return octalNumber;
+}
+
+// Example usage:
+const binary = "101010";
+const octal = binaryToOctal(binary);
+console.log("Octal representation:", octal);
+```
+
+1. It initializes an empty string (octalNumber) to store the octal representation.
+2. It pads the binaryNumber with leading zeros to make it divisible by 3 using the paddingLength variable.
+3. It iterates over the padded binary number in sets of three digits from right to left.
+4. For each set of three binary digits, it converts them to their equivalent decimal value using parseInt() with a radix of 2.
+5. It converts the decimal value to its octal representation using toString() with a radix of 8.
+6. It concatenates the octal digit to the octalNumber string.
+7. Finally, it returns the resulting octal number.
