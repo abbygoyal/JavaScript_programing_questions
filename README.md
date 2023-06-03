@@ -2155,3 +2155,234 @@ console.log("Octal representation:", octal);
 5. It converts the decimal value to its octal representation using toString() with a radix of 8.
 6. It concatenates the octal digit to the octalNumber string.
 7. Finally, it returns the resulting octal number.
+
+</br>
+
+# Print the Series
+
+## Q 1. Write the JavaScript Program to print the following series **_EVEN number Series_**
+
+```js
+function printEvenSeries(limit) {
+  for (let i = 2; i <= limit; i += 2) {
+    console.log(i);
+  }
+}
+
+// Example usage:
+const limit = 10;
+console.log("Even number series:");
+printEvenSeries(limit);
+
+// "Even number series:"
+// 2
+// 4
+// 6
+// 8
+// 10
+```
+
+</br>
+
+## Q 2. Write the JavaScript Program to print the following series **_ODD number Series_**
+
+```js
+function printOddSeries(limit) {
+  console.log("Odd number series:");
+  for (let i = 1; i <= limit; i += 2) {
+    console.log(i);
+  }
+}
+
+// Example usage:
+const limit = 10;
+printOddSeries(limit);
+
+// Odd number series:
+// 1
+// 3
+// 5
+// 7
+// 9
+```
+
+</br>
+
+## Q 3. Write the JavaScript Program to print the following series **_Pattern Series_** 3, 33, 333, 3333, 33333, 333333 ....
+
+```js
+function printPatternSeries(n) {
+  let pattern = "";
+
+  for (let i = 1; i <= n; i++) {
+    pattern += "3";
+    console.log(pattern);
+  }
+}
+
+// Example usage:
+const n = 5;
+printPatternSeries(n);
+
+// 3
+// 33
+// 333
+// 3333
+// 33333
+```
+
+</br>
+
+## Q 4. Write the JavaScript Program to print the following series **_Geometric Progression_**
+
+```js
+function printGeometricProgression(a, r, n) {
+  console.log("Geometric progression series:");
+  let term = a;
+
+  for (let i = 0; i < n; i++) {
+    console.log(term);
+    term *= r;
+  }
+}
+
+// Example usage:
+const initialTerm = 1;
+const commonRatio = 2;
+const numberOfTerms = 10;
+
+printGeometricProgression(initialTerm, commonRatio, numberOfTerms);
+
+// "Geometric progression series:"
+// 1
+// 2
+// 4
+// 8
+// 16
+// 32
+// 64
+// 128
+// 256
+// 512
+```
+
+</br>
+
+## Q 5. Write the JavaScript Program to print the following series **_Fibonacci Series_**
+
+```js
+function printFibonacciSeries(n) {
+  let series = [];
+
+  // First two terms of the series
+  series[0] = 0;
+  series[1] = 1;
+
+  // Generate the Fibonacci series
+  for (let i = 2; i < n; i++) {
+    series[i] = series[i - 1] + series[i - 2];
+  }
+
+  // Print the series
+  console.log("Fibonacci series:");
+  for (let i = 0; i < n; i++) {
+    console.log(series[i]);
+  }
+}
+
+// Example usage:
+const numberOfTerms = 10;
+printFibonacciSeries(numberOfTerms);
+
+// Fibonacci series:
+// 0
+// 1
+// 1
+// 2
+// 3
+// 5
+// 8
+// 13
+// 21
+// 34
+```
+
+In this program, the printFibonacciSeries function takes a parameter n
+that specifies the number of terms in the Fibonacci series to print.
+It initializes an array series to store the Fibonacci series.
+
+The program starts with the first two terms of the series, 0 and 1.
+Then, using a for loop, it generates the Fibonacci series by adding
+the previous two terms. Each new term is the sum of the two preceding
+terms.
+
+Finally, it prints the Fibonacci series using another for loop.
+
+In the example usage, the program prints the Fibonacci series with 10
+terms. You can modify the value of numberOfTerms to generate a
+different number of terms in the series.
+
+</br>
+
+## Q 6. Write the JavaScript Program to print the following series **_Prime Number Series_**
+
+```js
+function isPrime(num) {
+  if (num <= 1) {
+    return false;
+  }
+
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function printPrimeSeries(n) {
+  console.log("Prime number series:");
+  let count = 0;
+  let number = 2;
+
+  while (count < n) {
+    if (isPrime(number)) {
+      console.log(number);
+      count++;
+    }
+    number++;
+  }
+}
+
+// Example usage:
+const numberOfPrimes = 10;
+printPrimeSeries(numberOfPrimes);
+
+// Prime number series:
+// 2
+// 3
+// 5
+// 7
+// 11
+// 13
+// 17
+// 19
+// 23
+// 29
+```
+
+In this program, we define a helper function isPrime to check if a number
+is prime or not. It takes a number num as an argument and checks if it
+is divisible by any number from 2 to the square root of the number.
+If it is divisible by any number, it returns false; otherwise, it
+returns true.
+
+The printPrimeSeries function takes a parameter n that specifies the
+number of prime numbers to print. It uses a while loop to iterate until
+the desired count of prime numbers is reached. It checks if each number
+is prime using the isPrime function and prints it if it is.
+
+In the example usage, the program prints the prime number series with 10
+prime numbers. You can modify the value of numberOfPrimes to generate a
+different number of prime numbers in the series.
