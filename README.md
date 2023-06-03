@@ -6,6 +6,10 @@
 
 - [Basic Programs](#Basic-Programs)
 - [Numbers Based Programs](#Numbers-Based-Programs)
+- [Array Based Programs](#Array-Based-Programs)
+- [String Based Programs](#String-Based-Programs)
+- [Converters](#Converters)
+- [Print the Series](#Print-the-Series)
 
 <br/>
 
