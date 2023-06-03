@@ -1311,3 +1311,47 @@ In the example usage, we define two sorted arrays array1 and array2 and
 call the findIntersection function with these arrays. The result is stored
 in the result variable and printed to the console, which will output [3, 5]
 in this case.
+
+<br/>
+
+## Q 6. Write a Java Program to find the **_Intersection of Two Sorted_** arrays.
+
+```js
+function findIntersection(arr1, arr2) {
+  let i = 0; // Pointer for arr1
+  let j = 0; // Pointer for arr2
+  const intersection = [];
+
+  while (i < arr1.length && j < arr2.length) {
+    if (arr1[i] === arr2[j]) {
+      intersection.push(arr1[i]);
+      i++;
+      j++;
+    } else if (arr1[i] < arr2[j]) {
+      i++;
+    } else {
+      j++;
+    }
+  }
+
+  return intersection;
+}
+
+// Example usage:
+const array1 = [1, 3, 4, 5, 8];
+const array2 = [3, 5, 7, 9];
+const result = findIntersection(array1, array2);
+console.log(result); // Output: [3, 5]
+```
+
+In this program, we use two pointers i and j to iterate through arr1 and arr2 respectively. We compare the values at these pointers and move the pointers accordingly.
+
+If the values at arr1[i] and arr2[j] are equal, we found an intersection, so we add it to the intersection array and move both pointers forward.
+
+If arr1[i] is smaller than arr2[j], we increment i to move to the next element in arr1.
+
+If arr1[i] is larger than arr2[j], we increment j to move to the next element in arr2.
+
+We repeat this process until we reach the end of either arr1 or arr2. Finally, we return the intersection array.
+
+In the example usage, we define two sorted arrays array1 and array2 and call the findIntersection function with these arrays. The result is stored in the result variable and printed to the console, which will output [3, 5] in this case.
