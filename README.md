@@ -866,6 +866,19 @@ numbers in the given range.
 ## Q 8 . Write a Java Program to check whether the given number is **Armstrong Number** or NOT.
 
 ```js
+/*
+ * 	Armstrong Number
+ *
+ * A positive number is called Armstrong number
+ * if it is equal to the
+ * sum of cubes of its digits
+ * for example 0, 1, 153, 370, 371, 407 etc.
+ *
+ * 153 = 1^3 + 5^3 + 3^3 = 1 + 125 + 27 = 153
+ * 370 = 3^3 + 7^3 + 0^3 = 27 + 343 + 0 = 370
+ * 371 = 3^3 + 7^3 + 1^3 = 27 + 343 + 1 = 371
+ */
+
 function isArmstrongNumber(number) {
   const digits = [];
   let temp = number;
@@ -911,6 +924,21 @@ if (isArmstrongNumber(number)) {
 ## Q 9 . Write a Java Program to check whether the given number is **Perfect Number** or NOT.
 
 ```js
+/*
+ * Perfect Number
+ * ---------------
+ * Perfect number is a positive integer that is
+ * equal to the sum of its proper positive divisors,
+ * that is, the sum of its positive divisors excluding
+ * the number itself.
+ *
+ * Following are the examples of perfect number.
+ * 6 = 1+2+3
+ * 28= 1+2+4+7+14
+ * 496= 1+2+4+8+16+31+62+124+248
+ *
+ */
+
 function isPerfectNumber(number) {
   if (number <= 0) {
     return false;
@@ -962,5 +990,46 @@ using the isPerfectNumber function and log the result to the console.
 ## Q 10 . Write a Java Program to print **Perfect Numbers** between 1 to 1000.
 
 ```js
+function isPerfectNumber(number) {
+  if (number <= 0) {
+    return false;
+  }
 
+  let sum = 0;
+
+  for (let i = 1; i < number; i++) {
+    if (number % i === 0) {
+      sum += i;
+    }
+  }
+
+  return sum === number;
+}
+
+function printPerfectNumbers(start, end) {
+  console.log(`Perfect numbers between ${start} and ${end}:`);
+
+  for (let i = start; i <= end; i++) {
+    if (isPerfectNumber(i)) {
+      console.log(i);
+    }
+  }
+}
+
+// Example usage
+printPerfectNumbers(1, 1000);
 ```
+
+In this program, we have the isPerfectNumber function, which we used in the previous
+solution. It checks whether a given number is a perfect number or not.
+
+The printPerfectNumbers function takes two arguments, start and end, which represent the
+range of numbers to check for perfect numbers. It iterates through the numbers from start
+to end and calls the isPerfectNumber function for each number. If the number is a perfect
+number, it is printed to the console.
+
+In the example usage, we call the printPerfectNumbers function with the arguments 1 and
+1000 to print all the perfect numbers between 1 and 1000. The program outputs the perfect
+numbers to the console.
+
+# Array Based Programs
