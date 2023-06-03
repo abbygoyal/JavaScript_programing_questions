@@ -1768,12 +1768,69 @@ function countWords(str) {
 }
 
 // Example usage:
-const inputString = "Hello, how are you doing today?";
+const inputString = "Hello, my name is abhishek and i love javascript";
 const wordCount = countWords(inputString);
-console.log("Number of words:", wordCount); // "Number of words:", 6
+console.log("Number of words:", wordCount); // "Number of words:", 9
 ```
 
 1. It trims the string to remove any leading or trailing white spaces.
 2. If the trimmed string is empty, it returns 0 as there are no words.
 3. Otherwise, it splits the string into an array of words using the regular expression /\s+/, which matches one or more consecutive white spaces.
 4. Finally, it returns the length of the array, which represents the number of words in the string.
+
+<br/>
+
+## Q 4. Write a javaScript program to **_Count the Number of Vowels_** in the given string.
+
+```js
+function countVowels(str) {
+  // Convert the string to lowercase
+  str = str.toLowerCase();
+
+  // Define an array of vowels
+  const vowels = ["a", "e", "i", "o", "u"];
+
+  // Initialize a count variable for vowels
+  let vowelCount = 0;
+
+  // Iterate over each character in the string
+  for (let i = 0; i < str.length; i++) {
+    // Check if the current character is a vowel
+    if (vowels.includes(str[i])) {
+      // If it is, increment the vowel count
+      vowelCount++;
+    }
+  }
+
+  // Return the total count of vowels
+  return vowelCount;
+}
+
+// Example usage:
+const inputString = "Hello, my name is abhishek and i love javascript";
+const vowelCount = countVowels(inputString);
+console.log("Number of vowels:", vowelCount); // "Number of vowels:", 15
+```
+
+1. It converts the string to lowercase using the toLowerCase() method. This ensures that both uppercase and lowercase vowels are counted.
+2. It defines an array called vowels which contains all the vowel characters.
+3. It initializes a variable vowelCount to keep track of the count of vowels.
+4. It iterates over each character in the string using a for loop.
+5. For each character, it checks if it is included in the vowels array using the includes() method.
+6. If the character is a vowel, it increments the vowelCount.
+7. Finally, it returns the total count of vowels.
+
+<br/>
+
+## Q 5. Write a Java program to find the **_Most Repeated Character_** in the Given String.
+
+```js
+const maxChar = (str) => {
+  const strObj = {};
+  for (let char of str) {
+    strObj[char] = strObj[char] + 1 || 1;
+  }
+  return strObj;
+};
+console.log(maxChar("abhishek")); //{  a: 1,  b: 1,  e: 1,  h: 2,  i: 1,  k: 1,  s: 1}
+```
