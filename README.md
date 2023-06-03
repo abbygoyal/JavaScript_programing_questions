@@ -359,7 +359,7 @@ remove the rightmost digit. This process continues until all the digits have bee
 
 <br/>
 
-## Q 11. Write a Java Program to find the **_smallest of 3 numbers_** (a,b,c) without using < or > symbol?
+## Q 11. Write a JavaScript Program to find the **_smallest of 3 numbers_** (a,b,c) without using < or > symbol?
 
 ```js
 function findSmallest(a, b, c) {
@@ -859,7 +859,7 @@ numbers in the given range.
 
 <br/>
 
-## Q 8 . Write a Java Program to check whether the given number is **Armstrong Number** or NOT.
+## Q 8 . Write a JavaScript Program to check whether the given number is **Armstrong Number** or NOT.
 
 ```js
 /*
@@ -917,7 +917,7 @@ if (isArmstrongNumber(number)) {
 
 <br/>
 
-## Q 9 . Write a Java Program to check whether the given number is **Perfect Number** or NOT.
+## Q 9 . Write a JavaScript Program to check whether the given number is **Perfect Number** or NOT.
 
 ```js
 /*
@@ -983,7 +983,7 @@ using the isPerfectNumber function and log the result to the console.
 
 <br/>
 
-## Q 10 . Write a Java Program to print **Perfect Numbers** between 1 to 1000.
+## Q 10 . Write a JavaScript Program to print **Perfect Numbers** between 1 to 1000.
 
 ```js
 function isPerfectNumber(number) {
@@ -1032,7 +1032,7 @@ numbers to the console.
 
 # Array Based Programs
 
-## Q 1 . Write a Java Program to print **Perfect Numbers** between 1 to 1000.
+## Q 1 . Write a JavaScript Program to print **Perfect Numbers** between 1 to 1000.
 
 ```js
 /*
@@ -1423,7 +1423,7 @@ the result variable and printed to the console, which will output
 
 <br/>
 
-## Q 8. Write a Java Program to **_Move all Zero to End of the Array_**.
+## Q 8. Write a JavaScript Program to **_Move all Zero to End of the Array_**.
 
 ```js
 function moveZerosToEnd(arr) {
@@ -1822,7 +1822,7 @@ console.log("Number of vowels:", vowelCount); // "Number of vowels:", 15
 
 <br/>
 
-## Q 5. Write a Java program to find the **_Most Repeated Character_** in the Given String.
+## Q 5. Write a JavaScript program to find the **_Most Repeated Character_** in the Given String.
 
 ```js
 const maxChar = (str) => {
