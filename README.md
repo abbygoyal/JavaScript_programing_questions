@@ -1032,4 +1032,131 @@ In the example usage, we call the printPerfectNumbers function with the argument
 1000 to print all the perfect numbers between 1 and 1000. The program outputs the perfect
 numbers to the console.
 
+<br/>
+
 # Array Based Programs
+
+## Q 1 . Write a Java Program to print **Perfect Numbers** between 1 to 1000.
+
+```js
+/*
+ * Calculate the Average of Given Array
+ * -------------------------------------
+ *
+ * This is one basic program using array.
+ * Steps
+ * 1. Declare a variable sum with 0
+ * 2. Iterate the array and add with sum variable
+ * 3. Divide the sum with array length
+ *
+ * array = {10, 10, 10, 10, 10};
+ * sum is 50
+ * array length is 5
+ * average is 10
+ *
+ * array = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
+ * sum is 550
+ * array length is 10
+ * average is 55
+ */
+
+function calculateAverage(arr) {
+  if (arr.length === 0) {
+    return 0; // To avoid division by zero
+  }
+
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+
+  const average = sum / arr.length;
+  return average;
+}
+
+// Example usage:
+const numbers = [4, 8, 6, 2, 9];
+const average = calculateAverage(numbers);
+console.log(average); // Output: 5.8
+```
+
+We first check if the array is empty (arr.length === 0). If it is, we return
+0 to avoid division by zero.
+
+Next, we initialize a variable sum to store the sum of all the elements in
+the array.
+
+We then use a for loop to iterate through each element of the array and add
+it to the sum variable.
+
+After the loop, we calculate the average by dividing the sum by the length
+of the array (arr.length).
+
+Finally, we return the calculated average.
+
+In the example usage, we define an array of numbers numbers and call the
+calculateAverage function with this array. The average is stored in the
+average variable and printed to the console, which will output 5.8 in this
+case.
+
+<br/>
+
+## Q 2. Find the second largest number in the given array.
+
+```js
+function findSecondLargest(arr) {
+  if (arr.length < 2) {
+    return "Array should have at least two numbers";
+  }
+
+  let largest = -Infinity;
+  let secondLargest = -Infinity;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      secondLargest = largest;
+      largest = arr[i];
+    } else if (arr[i] > secondLargest && arr[i] < largest) {
+      secondLargest = arr[i];
+    }
+  }
+
+  if (secondLargest === -Infinity) {
+    return "There is no second largest number";
+  }
+
+  return secondLargest;
+}
+
+// Example usage:
+const numbers = [4, 8, 6, 2, 9];
+const secondLargest = findSecondLargest(numbers);
+console.log(secondLargest); // Output: 8
+```
+
+First, we perform a check to ensure that the array has at least two numbers.
+If the length of the array is less than 2, we return a message indicating
+that the array should have at least two numbers.
+
+Next, we initialize two variables, largest and secondLargest, to store the
+largest and second largest numbers in the array, respectively. We
+initialize them with -Infinity to handle cases where the array contains
+negative numbers.
+
+We then loop through each element in the array. If an element is greater
+than the current largest, we update secondLargest with the previous value of
+largest, and update largest with the new element.
+
+If an element is greater than the current secondLargest but smaller than
+largest, we update secondLargest with the new element.
+
+After the loop, we check if secondLargest remains as -Infinity, which means
+there is no second largest number in the array. In that case, we return a
+message indicating that there is no second largest number.
+
+Otherwise, we return the secondLargest number.
+
+In the example usage, we define an array of numbers numbers and call the
+findSecondLargest function with this array. The second largest number is
+stored in the secondLargest variable and printed to the console, which will
+output 8 in this case.
