@@ -1469,7 +1469,7 @@ console, which will output [5, 3, 8, 9, 0, 0, 0] in this case.
 
 <br/>
 
-## Q 9. Write a Java Program to **_Move all Zeros to Start of the Array_**.
+## Q 9. Write a JavaScript Program to **_Move all Zeros to Start of the Array_**.
 
 ```js
 function moveZerosToStart(arr) {
@@ -1513,3 +1513,33 @@ In the example usage, we define an array of numbers numbers and call the
 moveZerosToStart function with this array. The modified array with
 zeros moved to the start is stored in the result variable and printed
 to the console, which will output [0, 0, 0, 5, 3, 8, 9] in this case.
+
+<br/>
+
+## Q 10. Write a JavaScript Program to **_Reverse the given array_**
+
+```js
+function reverseArray(arr) {
+  const reversed = arr.reverse();
+  return reversed;
+}
+
+// Example usage:
+const numbers = [1, 2, 3, 4, 5];
+const result = reverseArray(numbers);
+console.log(result); // Output: [5, 4, 3, 2, 1]
+```
+
+In this program, we use the reverse() method to reverse the given
+array. The reverse() method modifies the original array in place
+and returns the reversed array.
+
+We call the reverse() method on the arr array and store the reversed
+array in a variable called reversed.
+
+Finally, we return the reversed array.
+
+In the example usage, we define an array of numbers numbers and call
+the reverseArray function with this array. The reversed array is
+stored in the result variable and printed to the console, which
+will output [5, 4, 3, 2, 1] in this case.
