@@ -1,7 +1,5 @@
 # JavaScript Programing Questions By Abhishek Goyal
 
-> \_Click &#9733; if you like the project. Your contributions are heartily ♡ welcome.
-
 <br/>
 
 <!-- ## Table of Contents
