@@ -1528,6 +1528,24 @@ function reverseArray(arr) {
 const numbers = [1, 2, 3, 4, 5];
 const result = reverseArray(numbers);
 console.log(result); // Output: [5, 4, 3, 2, 1]
+
+// Another approach
+
+function reverseArray(arr) {
+  const reversed = [];
+  const length = arr.length;
+
+  for (let i = length - 1; i >= 0; i--) {
+    reversed.push(arr[i]);
+  }
+
+  return reversed;
+}
+
+// Example usage:
+const numbers = [1, 2, 3, 4, 5];
+const result = reverseArray(numbers);
+console.log(result); // Output: [5, 4, 3, 2, 1]
 ```
 
 In this program, we use the reverse() method to reverse the given
