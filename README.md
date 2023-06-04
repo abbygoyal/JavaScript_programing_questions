@@ -2054,6 +2054,8 @@ console.log("Decimal representation:", decimal);
 2. The parseInt() function accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 2 to indicate binary representation.
 3. The function then returns the decimal representation of the binary number.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 </br>
 
 ## Q 3. Convert Decimal Number to Octal Number.
@@ -2074,6 +2076,8 @@ console.log("Octal representation:", octal);
 1. It uses the toString() method on the decimalNumber to convert it to a string representation.
 2. The toString() method accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 8 to indicate octal representation.
 3. The function then returns the octal representation of the decimal number.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 </br>
 
@@ -2096,6 +2100,8 @@ console.log("Decimal representation:", decimal);
 2. The parseInt() function accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 8 to indicate octal representation.
 3. The function then returns the decimal representation of the octal number.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 </br>
 
 ## Q 5. Convert Decimal to Hexadecimal.
@@ -2116,6 +2122,8 @@ console.log("Hexadecimal representation:", hexadecimal);
 1. It uses the toString() method on the decimalNumber to convert it to a string representation.
 2. The toString() method accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 16 to indicate hexadecimal representation.
 3. The function then returns the hexadecimal representation of the decimal number.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 </br>
 
@@ -2138,6 +2146,8 @@ console.log("Decimal representation:", decimal);
 2. The parseInt() function accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 16 to indicate hexadecimal representation.
 3. The function then returns the decimal representation of the hexadecimal number.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 </br>
 
 ## Q 7. Convert Hexadecimal to Decimal.
@@ -2158,6 +2168,8 @@ console.log("Decimal representation:", decimal);
 1. It uses the parseInt() function to parse the hexadecimalNumber as an integer.
 2. The parseInt() function accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 16 to indicate hexadecimal representation.
 3. The function then returns the decimal representation of the hexadecimal number.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 </br>
 
@@ -2194,6 +2206,8 @@ console.log("Binary representation:", binary);
 5. If the binary representation is less than 3 digits, it pads it with leading zeros using padStart() to ensure it has exactly 3 digits.
 6. It concatenates the binary representation of each octal digit to the binaryNumber string.
 7. Finally, it returns the resulting binary number.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 </br>
 
@@ -2239,6 +2253,8 @@ console.log("Octal representation:", octal);
 6. It concatenates the octal digit to the octalNumber string.
 7. Finally, it returns the resulting octal number.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 </br>
 
 # Print the Series
@@ -2265,6 +2281,8 @@ printEvenSeries(limit);
 // 10
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
+
 </br>
 
 ## Q 2. Write the JavaScript Program to print the following series **_ODD number Series_**
@@ -2288,6 +2306,8 @@ printOddSeries(limit);
 // 7
 // 9
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 </br>
 
@@ -2313,6 +2333,8 @@ printPatternSeries(n);
 // 3333
 // 33333
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 </br>
 
@@ -2348,6 +2370,8 @@ printGeometricProgression(initialTerm, commonRatio, numberOfTerms);
 // 256
 // 512
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 </br>
 
@@ -2404,6 +2428,8 @@ Finally, it prints the Fibonacci series using another for loop.
 In the example usage, the program prints the Fibonacci series with 10
 terms. You can modify the value of numberOfTerms to generate a
 different number of terms in the series.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 </br>
 
@@ -2469,3 +2495,6 @@ is prime using the isPrime function and prints it if it is.
 In the example usage, the program prints the prime number series with 10
 prime numbers. You can modify the value of numberOfPrimes to generate a
 different number of prime numbers in the series.
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
