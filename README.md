@@ -1944,7 +1944,7 @@ most common character in the input string.
 
 <br/>
 
-## Q 6. Write a Java Program to **_Print All Combinations_** of a given String.
+## Q 6. Write a JavaScript Program to **_Print All Combinations_** of a given String.
 
 ```js
 function printCombinations(str) {
