@@ -181,6 +181,8 @@ whether they are positive, negative, or zero.
 In the example above, it is called with the numbers 5, -7, and 0, and it returns
 the corresponding results.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 6. Write a JavaScript Program to find whether given number is **_Leap year or NOT_**?
@@ -211,6 +213,8 @@ It checks two conditions to determine whether the year is a leap year:
 If either of these conditions is satisfied, the function returns "Leap year".
 Otherwise, it returns "Not a leap year".
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 7. Write a JavaScript Program to find whether given number is **_Leap year or NOT_**?
@@ -225,6 +229,8 @@ console.log(isLeapYear(2000));  // Output: true
 console.log(isLeapYear(1900));  // Output: false
 
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -248,6 +254,8 @@ for (let number = 1; number <= 10; number++) {
 9;
 10;
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -290,6 +298,9 @@ digit.
 
 By calling the printDigits function with a given number, it will print each
 digit of the number on separate lines.
+
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 9. Write a JavaScript Program to print all the **_Factors of the Given number_**.
@@ -331,6 +342,8 @@ If i is a factor, it is printed to the console using console.log.
 By calling the printFactors function with a given number,
 it will print all the factors of that number.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 10. Write a JavaScript Program to find **_sum of the digits of a given number_**.
@@ -358,6 +371,8 @@ This extracts the rightmost digit of the number and adds it to the sum.
 
 After adding the digit, the number is divided by 10 (number = Math.floor(number / 10)) to
 remove the rightmost digit. This process continues until all the digits have been processed.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -400,6 +415,8 @@ The function checks the following conditions:
 1. If a is less than or equal to both b and c, then a is the smallest number.
 2. If b is less than or equal to both a and c, then b is the smallest number.
    Otherwise, c is the smallest number.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
