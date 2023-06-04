@@ -434,6 +434,8 @@ number among them using the spread operator and the Math.min function.
 This approach provides a concise way to find the smallest of three numbers without
 the need for explicit comparisons using if or else statements.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 12. Write a javaScript program to **_Reverse a given number_**.
@@ -465,6 +467,8 @@ reversed variable by multiplying it by 10 and then adding the digit.
 After adding the digit, the number is divided by 10
 (number = Math.floor(number / 10)) to remove the rightmost digit.
 This process continues until all the digits have been processed.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -508,6 +512,8 @@ operator (%). Finally, a is updated with the value stored in temp.
 
 This process continues until b becomes zero, indicating that the GCD has been
 found. At that point, the GCD is stored in a and returned.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -573,6 +579,8 @@ multiple, and the loop is exited.
 
 If the LCM is not divisible by both a and b, it is incremented by max. This
 process continues until the LCM is found.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -670,6 +678,8 @@ Finally, the findLCM function calculates the LCM by iterating over the merged pr
 factors. It multiplies each prime factor raised to its corresponding frequency to
 calculate the LCM.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 4. Check whether the **_Given Number_** is a **_Palindrome or NOT_**.
@@ -746,6 +756,8 @@ After the loop finishes, we compare originalNumber with reversedNumber. If
 they are equal, it means the number is a palindrome, and the function returns
 true. Otherwise, it returns false.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 5. Write a JavaScript Program to print all the **Prime Factors** of the Given Number.
@@ -787,6 +799,8 @@ printPrimeFactors(97); // Output: 97
 7. The loop continues until number becomes 1, at which point all the prime factors
    have been found and printed.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 6. Write a JavaScript Program to check whether the Given Number is **_Prime Number or NOT_**.
@@ -819,6 +833,8 @@ console.log(isPrime(28)); // Output: false
    number, so we return false.
 3. If the number is not divisible by any number in the range, it is a prime
    number, so we return true.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -875,6 +891,8 @@ In the example, the number N is set to 20 to test the function. You
 can replace it with any other positive integer to print the prime
 numbers from 1 to that number. The program will print the prime
 numbers in the given range.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -933,6 +951,8 @@ if (isArmstrongNumber(number)) {
    digits using the reduce method.
 5. Finally, check if the sum is equal to the original number. If it is,
    then the number is an Armstrong number.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1000,6 +1020,8 @@ returns true. Otherwise, it returns false.
 In the example usage, we check whether the number 28 is a perfect number
 using the isPerfectNumber function and log the result to the console.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 10 . Write a JavaScript Program to print **Perfect Numbers** between 1 to 1000.
@@ -1046,6 +1068,8 @@ number, it is printed to the console.
 In the example usage, we call the printPerfectNumbers function with the arguments 1 and
 1000 to print all the perfect numbers between 1 and 1000. The program outputs the perfect
 numbers to the console.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1114,6 +1138,8 @@ calculateAverage function with this array. The average is stored in the
 average variable and printed to the console, which will output 5.8 in this
 case.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 2. Find the second largest number in the given array.
@@ -1175,6 +1201,8 @@ In the example usage, we define an array of numbers numbers and call the
 findSecondLargest function with this array. The second largest number is
 stored in the secondLargest variable and printed to the console, which will
 output 8 in this case.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1238,6 +1266,8 @@ findSecondMinimum function with this array. The second minimum number is
 stored in the secondMinimum variable and printed to the console, which will
 output 4 in this case.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 4. Find the missing Number in the given array of 1 to N.
@@ -1278,6 +1308,8 @@ In the example usage, we define an array of numbers numbers and call the
 findMissingNumber function with this array. The missing number is stored in
 the missingNumber variable and printed to the console, which will output 3
 in this case.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1331,6 +1363,8 @@ call the findIntersection function with these arrays. The result is stored
 in the result variable and printed to the console, which will output [3, 5]
 in this case.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 6. Write a JavaScript Program to find the **_Intersection of Two Sorted_** arrays.
@@ -1374,6 +1408,8 @@ If arr1[i] is larger than arr2[j], we increment j to move to the next element in
 We repeat this process until we reach the end of either arr1 or arr2. Finally, we return the intersection array.
 
 In the example usage, we define two sorted arrays array1 and array2 and call the findIntersection function with these arrays. The result is stored in the result variable and printed to the console, which will output [3, 5] in this case.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1440,6 +1476,8 @@ findUnion function with these arrays. The union of the arrays is stored in
 the result variable and printed to the console, which will output
 [1, 3, 4, 5, 8, 7, 9] in this case.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 8. Write a JavaScript Program to **_Move all Zero to End of the Array_**.
@@ -1485,6 +1523,8 @@ In the example usage, we define an array of numbers numbers and call the
 moveZerosToEnd function with this array. The modified array with zeros
 moved to the end is stored in the result variable and printed to the
 console, which will output [5, 3, 8, 9, 0, 0, 0] in this case.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1532,6 +1572,8 @@ In the example usage, we define an array of numbers numbers and call the
 moveZerosToStart function with this array. The modified array with
 zeros moved to the start is stored in the result variable and printed
 to the console, which will output [0, 0, 0, 5, 3, 8, 9] in this case.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1581,6 +1623,8 @@ the reverseArray function with this array. The reversed array is
 stored in the result variable and printed to the console, which
 will output [5, 4, 3, 2, 1] in this case.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 11. Write a program to find the **_Most Frequent Element_** in an given array.
@@ -1610,6 +1654,8 @@ let arr = [40, 50, 30, 40, 50, 30, 30];
 let n = arr.length;
 console.log(mostFrequent(arr, n)); //30
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1665,6 +1711,8 @@ The most frequent element and its occurrence count are stored in
 the result variable and printed to the console, which will output
 { element: 30, frequency: 3 } in this case.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 13. Write a javaScript program to **_Rotate the Given Array_** d times.
@@ -1706,6 +1754,8 @@ Rotate_and_Print(arr, d, n); // 3 4 5 6 7 1 2
 3. Store the elements from the position d to n-1 in the temporary array
 4. Now, store 0 to d-1 elements of the original array in the temporary array 5. Lastly, copy back the temporary array to the original array
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 # String Based Programs
@@ -1741,6 +1791,8 @@ const reversedString = reverseString(originalString);
 console.log("Reversed string:", reversedString); // "Reversed string:", "kehsihbA"
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 2. Write a javaScript program to **_Sort the String_** d times.
@@ -1764,6 +1816,8 @@ let stringToSort = "Abhishek";
 let sortedString = sortString(stringToSort);
 console.log(sortedString); //Abehhiks
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1796,6 +1850,8 @@ console.log("Number of words:", wordCount); // "Number of words:", 9
 2. If the trimmed string is empty, it returns 0 as there are no words.
 3. Otherwise, it splits the string into an array of words using the regular expression /\s+/, which matches one or more consecutive white spaces.
 4. Finally, it returns the length of the array, which represents the number of words in the string.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1839,6 +1895,8 @@ console.log("Number of vowels:", vowelCount); // "Number of vowels:", 15
 6. If the character is a vowel, it increments the vowelCount.
 7. Finally, it returns the total count of vowels.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 <br/>
 
 ## Q 5. Write a JavaScript program to find the **_Most Repeated Character_** in the Given String.
@@ -1881,6 +1939,8 @@ each key to maxCount. If the value is greater than the value of
 maxCount, then, we will assign that value to maxCount and the
 key to maxChar. At the end of the loop, maxChar will be the
 most common character in the input string.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 <br/>
 
@@ -1946,6 +2006,8 @@ printCombinations(inputString);
 6. After generating all the combinations, it prints each combination
    by iterating over the combinations array.
 
+**[⬆ Back to Top](#table-of-contents)**
+
 </br>
 
 # Converters
@@ -1968,6 +2030,8 @@ console.log("Binary representation:", binary);
 1. It uses the toString() method on the decimalNumber to convert it to a string representation.
 2. The toString() method accepts an optional radix parameter, which specifies the base of the number system. In this case, we pass the radix value of 2 to indicate binary representation.
 3. The function then returns the binary representation of the decimal number.
+
+**[⬆ Back to Top](#table-of-contents)**
 
 </br>
 
