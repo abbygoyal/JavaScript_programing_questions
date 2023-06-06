@@ -2741,7 +2741,7 @@ function on every element in the array.
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 15. Write the JavaScript Program using **pop()**
+## Q 16. Write the JavaScript Program using **pop()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2756,7 +2756,7 @@ returns that element
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 15. Write the JavaScript Program using **push()**
+## Q 17. Write the JavaScript Program using **push()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2766,6 +2766,49 @@ console.log(arr); //Output: [1,2,3,4,5,6]
 
 Adds one or more elements to the end of an array and
 returns the new length of the array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 18. Write the JavaScript Program using **shift()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const firstElement = arr.shigt();
+console.log(firstElement); //Output: 1
+console.log(arr); //Output: [2,3,4,5]
+```
+
+Removes the first element from an array and returns
+that element
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 19. Write the JavaScript Program using **unshift()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+arr.unshift(0);
+console.log(arr); //Output: [0,1,2,3,4,5]
+```
+
+Adds one or more elements to the beginning of an array
+and returns the new length of the array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 20. Write the JavaScript Program using **unshift()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+arr.unshift(0);
+console.log(arr); //Output: [0,1,2,3,4,5]
+```
+
+Adds one or more elements to the beginning of an array
+and returns the new length of the array
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
