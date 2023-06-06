@@ -2596,3 +2596,29 @@ the provided testing function.
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
+
+## Q 6. Write the JavaScript Program using **indexOf()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const index = arr.indexOf(3);
+console.log(index); //Output: 2
+```
+
+Returns the first index at which a specified element is found in an array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 7. Write the JavaScript Program using **lastIndexOf()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const index = arr.lastIndexOf(2);
+console.log(index); //Output: 4
+```
+
+Returns the last index at which a specified element is found in an array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
