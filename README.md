@@ -2860,9 +2860,10 @@ Reverses the order of the elements in an array
 ```js
 const arr = [1, 2, 3, 4, 5];
 const sliced = arr.slice(1, 4);
-console.log(sliced); //Output: [5, 4, 3, 2, 1]
+console.log(sliced); //Output: [2,3,4]
 ```
 
 Extracts a section of an array and returns a new array
+
 **[⬆ Back to Top](#table-of-contents)**
 </br>
