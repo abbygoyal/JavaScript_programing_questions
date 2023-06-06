@@ -2568,10 +2568,11 @@ console.log(hasEvenNumber); //Output: [2,4]
 ```
 
 Creates a new array with all elements that pass the provided function's test
+
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 5. Write the JavaScript Program using **find()**
+## Q 6. Write the JavaScript Program using **find()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2580,10 +2581,11 @@ console.log(foundNumber); //Output: [4]
 ```
 
 Returns the first element in the array that satisfies the provided testing function.
+
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 6. Write the JavaScript Program using **findIndex()**
+## Q 7. Write the JavaScript Program using **findIndex()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2597,7 +2599,7 @@ the provided testing function.
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 6. Write the JavaScript Program using **indexOf()**
+## Q 8. Write the JavaScript Program using **indexOf()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2610,7 +2612,7 @@ Returns the first index at which a specified element is found in an array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 7. Write the JavaScript Program using **lastIndexOf()**
+## Q 9. Write the JavaScript Program using **lastIndexOf()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2623,7 +2625,7 @@ Returns the last index at which a specified element is found in an array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 8. Write the JavaScript Program using **flat()**
+## Q 10. Write the JavaScript Program using **flat()**
 
 ```js
 const arr = [1, 2, [3, 4, [5, 6]]];
@@ -2637,7 +2639,7 @@ into it recursively up to the specified depth
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 9. Write the JavaScript Program using **flatMap()**
+## Q 11. Write the JavaScript Program using **flatMap()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2651,7 +2653,7 @@ into a new array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 10. Write the JavaScript Program using **includes()**
+## Q 12. Write the JavaScript Program using **includes()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2664,7 +2666,7 @@ Checks if an array contains a specific element
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 11. Write the JavaScript Program using **forEach()**
+## Q 13. Write the JavaScript Program using **forEach()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2684,7 +2686,7 @@ Executes a provided function once for each array element.
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 12. Write the JavaScript Program using **from()**
+## Q 14. Write the JavaScript Program using **from()**
 
 ```js
 const arr = Array.from("JavaScript");
@@ -2698,7 +2700,7 @@ arguments object) into a new array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 13. Write the JavaScript Program using **join()**
+## Q 15. Write the JavaScript Program using **join()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2711,7 +2713,7 @@ Joins all elements of an array into a string
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 14. Write the JavaScript Program using **key()**
+## Q 16. Write the JavaScript Program using **key()**
 
 ```js
 const arr = ["a", "b", "c"];
@@ -2727,7 +2729,7 @@ the keys for each index in the array.
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 15. Write the JavaScript Program using **map()**
+## Q 17. Write the JavaScript Program using **map()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2741,7 +2743,7 @@ function on every element in the array.
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 16. Write the JavaScript Program using **pop()**
+## Q 18. Write the JavaScript Program using **pop()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2756,7 +2758,7 @@ returns that element
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 17. Write the JavaScript Program using **push()**
+## Q 19. Write the JavaScript Program using **push()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2770,7 +2772,7 @@ returns the new length of the array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 18. Write the JavaScript Program using **shift()**
+## Q 20. Write the JavaScript Program using **shift()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2785,7 +2787,7 @@ that element
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 19. Write the JavaScript Program using **unshift()**
+## Q 21. Write the JavaScript Program using **unshift()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2799,7 +2801,7 @@ and returns the new length of the array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 20. Write the JavaScript Program using **unshift()**
+## Q 21. Write the JavaScript Program using **unshift()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2813,7 +2815,7 @@ and returns the new length of the array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 21. Write the JavaScript Program using **reduce()**
+## Q 22. Write the JavaScript Program using **reduce()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2828,7 +2830,7 @@ the array (from left to right) to reduce it to a single value
 
 </br>
 
-## Q 22. Write the JavaScript Program using **reduceRight()**
+## Q 23. Write the JavaScript Program using **reduceRight()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2842,7 +2844,7 @@ the array (from right to left) to reduce it to a single value
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 23. Write the JavaScript Program using **reverse()**
+## Q 24. Write the JavaScript Program using **reverse()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2855,7 +2857,7 @@ Reverses the order of the elements in an array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 24. Write the JavaScript Program using **slice()**
+## Q 25. Write the JavaScript Program using **slice()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2868,7 +2870,7 @@ Extracts a section of an array and returns a new array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 25. Write the JavaScript Program using **splice()**
+## Q 26. Write the JavaScript Program using **splice()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2882,7 +2884,7 @@ Changes the contents of an array by removing, replacing,or adding elements
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 26. Write the JavaScript Program using **sort()**
+## Q 27. Write the JavaScript Program using **sort()**
 
 ```js
 const arr = [3, 1, 5, 2, 4];
@@ -2894,7 +2896,7 @@ Sorts the elements of an array in place and returns the sorted array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 26. Write the JavaScript Program using **toString()**
+## Q 28. Write the JavaScript Program using **toString()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2903,10 +2905,12 @@ console.log(arr); //Output: '1,2,3,4,5'
 ```
 
 Returns a string representing the specified array and its elements
+
 **[⬆ Back to Top](#table-of-contents)**
+
 </br>
 
-## Q 27. Write the JavaScript Program using **values()**
+## Q 29. Write the JavaScript Program using **values()**
 
 ```js
 const arr = ["a", "b", "c"];
@@ -2922,7 +2926,7 @@ each index in the array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 28. Write the JavaScript Program using **copyWithin()**
+## Q 30. Write the JavaScript Program using **copyWithin()**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2935,7 +2939,7 @@ Copies a portion of an array to another location within the same array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 29. Write the JavaScript Program using **Array.of()**
+## Q 31. Write the JavaScript Program using **Array.of()**
 
 ```js
 const array = Array.of(1, 2, 3, 4, 5);
