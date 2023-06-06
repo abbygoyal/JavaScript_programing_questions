@@ -2740,3 +2740,32 @@ function on every element in the array.
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
+
+## Q 15. Write the JavaScript Program using **pop()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const lastElement = arr.pop();
+console.log(doubled); //Output: 5
+console.log(arr); //Output: [1,2,3,4]
+```
+
+Removes the last element from an array and
+returns that element
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 15. Write the JavaScript Program using **push()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+arr.push(6);
+console.log(arr); //Output: [1,2,3,4,5,6]
+```
+
+Adds one or more elements to the end of an array and
+returns the new length of the array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
