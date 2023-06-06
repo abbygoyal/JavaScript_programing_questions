@@ -2554,7 +2554,45 @@ const allEven = arr.every((num) => num % 2 === 0);
 console.log(hasEvenNumber); //Output: false
 ```
 
-Tests whether all elements in the array pass the provided function.
+Fills all elements in the array with a static value.
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 5. Write the JavaScript Program using **filter()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const evenNumbers = arr.filter((num) => num % 2 === 0);
+console.log(hasEvenNumber); //Output: [2,4]
+```
+
+Creates a new array with all elements that pass the provided function's test
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 5. Write the JavaScript Program using **find()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const foundNumber = arr.find((num) => num > 3);
+console.log(foundNumber); //Output: [4]
+```
+
+Returns the first element in the array that satisfies the provided testing function.
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 6. Write the JavaScript Program using **findIndex()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const foundNumber = arr.findIndex((num) => num > 3);
+console.log(foundNumber); //Output: [3]
+```
+
+Returns the index of the first element in the array that satisfies
+the provided testing function.
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
