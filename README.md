@@ -1,4 +1,4 @@
-# JavaScript Programming  Questions By Abhishek Goyal
+# JavaScript Programming Questions By Abhishek Goyal
 
 <br/>
 Preparing for a JavaScript interview can be a challenging task, as it requires a solid understanding of the language's concepts and techniques. To help you excel in your next interview, we have compiled a set of JavaScript programming questions commonly asked during technical assessments. Whether you're a beginner seeking an entry-level position or an experienced developer aiming for a senior role, these questions will assess your knowledge and problem-solving abilities. Let's dive into the world of JavaScript and equip yourself with the necessary tools to succeed.
@@ -2516,3 +2516,21 @@ Concatenates two or more arrays
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
+
+## Q 2. Write the JavaScript Program using **_Entries()_**
+
+```js
+const arr = ["a", "b", "c"];
+const iterator = arr.entries();
+console.log(iterator.next().value); //Output: [0 ,'a'];
+console.log(iterator.next().value); //Output: [1 ,'b'];
+console.log(iterator.next().value); //Output: [2 ,'c'];
+```
+
+Returns an iterator object that contains the key value pairs
+for each index in the array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 2. Write the JavaScript Program using **_Entries()_**
