@@ -2921,3 +2921,34 @@ each index in the array
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
+
+## Q 28. Write the JavaScript Program using **copyWithin()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+arr.copyWithin(0, 3, 5);
+console.log(arr); //Output:[4,5,3,4,5]
+```
+
+Copies a portion of an array to another location within the same array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 28. Write the JavaScript Program using **isArray()**
+
+```js
+const arr = [1, 2, 3];
+console.log(Array.isArray(array)); //Output:true;
+
+const string = "Abhishek";
+console.log(Array.isArray(string)); //Output:false;
+
+const object = { name: "John", age: 30 };
+console.log(Array.isArray(object)); //Output:false;
+```
+
+It is used to determine whether a given value is an array or not It returns true if the value is an array, and false otherwise.
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
