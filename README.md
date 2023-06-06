@@ -2533,4 +2533,28 @@ for each index in the array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 2. Write the JavaScript Program using **_Entries()_**
+## Q 3. Write the JavaScript Program using **_every()s_**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const allEven = arr.every((num) => num % 2 === 0);
+console.log(hasEvenNumber); //Output: false
+```
+
+Tests whether all elements in the array pass the provided function.
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 4. Write the JavaScript Program using **fill()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const allEven = arr.every((num) => num % 2 === 0);
+console.log(hasEvenNumber); //Output: false
+```
+
+Tests whether all elements in the array pass the provided function.
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
