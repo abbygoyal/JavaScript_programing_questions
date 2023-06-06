@@ -2867,3 +2867,57 @@ Extracts a section of an array and returns a new array
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
+
+## Q 25. Write the JavaScript Program using **splice()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const removed = arr.slice(2, 2);
+console.log(removed); //Output: [3,4]
+console.log(arr); //Output: [1,2,5]
+```
+
+Changes the contents of an array by removing, replacing,or adding elements
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 26. Write the JavaScript Program using **sort()**
+
+```js
+const arr = [3, 1, 5, 2, 4];
+arr.sort();
+console.log(arr); //Output: [1,2,3,4,5]
+```
+
+Sorts the elements of an array in place and returns the sorted array
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 26. Write the JavaScript Program using **toString()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const str = arr.toString();
+console.log(arr); //Output: '1,2,3,4,5'
+```
+
+Returns a string representing the specified array and its elements
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 27. Write the JavaScript Program using **values()**
+
+```js
+const arr = ["a", "b", "c"];
+const iterator = arr.values();
+console.log(iterator.nect().value); //Output: 'a'
+console.log(iterator.nect().value); //Output: 'b'
+console.log(iterator.nect().value); //Output: 'c'
+```
+
+Returns a new Array Iterator object that contains the values for
+each index in the array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
