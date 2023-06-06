@@ -2622,3 +2622,107 @@ Returns the last index at which a specified element is found in an array
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
+
+## Q 8. Write the JavaScript Program using **flat()**
+
+```js
+const arr = [1, 2, [3, 4, [5, 6]]];
+const flattened = arr.flat(2);
+console.log(flattened); //Output: [1,2,3,4,5,6]
+```
+
+Creates a new array with all sub array elements concatenated
+into it recursively up to the specified depth
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 9. Write the JavaScript Program using **flatMap()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const doubledAndFlattened = arr.flatMap((num) => [num * 2]);
+console.log(doubledAndFlattened); //Output: [2, 4, 6, 8, 10]
+```
+
+Maps each element using a mapping function, then flattens the result
+into a new array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 10. Write the JavaScript Program using **includes()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const includesThree = arr.includes(3);
+console.log(includesThree); //Output: true
+```
+
+Checks if an array contains a specific element
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 11. Write the JavaScript Program using **forEach()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+arr.forEach((num) => {
+  console.log(num);
+});
+// Output:
+// 1
+// 2
+// 3
+// 4
+// 5
+```
+
+Executes a provided function once for each array element.
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 12. Write the JavaScript Program using **from()**
+
+```js
+const arr = Array.from("JavaScript");
+console.log(arr); //Output ["J", "a", "v", "a", "S", "c", "r", "i", "p", "t"]
+```
+
+Allows you to convert an iterable object (such as a string, Set,
+Map, etc or an array like object (such as the
+arguments object) into a new array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 13. Write the JavaScript Program using **join()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const joined = arr.join("-");
+console.log(joined); //Output: "1-2-3-4-5"
+```
+
+Joins all elements of an array into a string
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 14. Write the JavaScript Program using **join()**
+
+```js
+const arr = ["a", "b", "c"];
+const iterator = arr.keys();
+console.log(iterator.next().value); //Output:0;
+console.log(iterator.next().value); //Output:1;
+console.log(iterator.next().value); //Output:2;
+```
+
+Returns a new Array Iterator object that contains
+the keys for each index in the array.
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
