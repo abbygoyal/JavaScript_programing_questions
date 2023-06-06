@@ -2533,7 +2533,7 @@ for each index in the array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 3. Write the JavaScript Program using **_every()s_**
+## Q 3. Write the JavaScript Program using **_every()_**
 
 ```js
 const arr = [1, 2, 3, 4, 5];
@@ -2711,7 +2711,7 @@ Joins all elements of an array into a string
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 14. Write the JavaScript Program using **join()**
+## Q 14. Write the JavaScript Program using **key()**
 
 ```js
 const arr = ["a", "b", "c"];
@@ -2810,5 +2810,59 @@ console.log(arr); //Output: [0,1,2,3,4,5]
 Adds one or more elements to the beginning of an array
 and returns the new length of the array
 
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 21. Write the JavaScript Program using **reduce()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const sum = arr.reduce((acc, num) => acc + num, 0);
+console.log(sum); //Output: 15
+```
+
+Applies a function against an accumulator and each element in
+the array (from left to right) to reduce it to a single value
+
+**[⬆ Back to Top](#table-of-contents)**
+
+</br>
+
+## Q 22. Write the JavaScript Program using **reduceRight()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const sum = arr.reduceRight((acc, num) => acc + num, 0);
+console.log(sum); //Output: 15
+```
+
+Applies a function against an accumulator and each element in
+the array (from right to left) to reduce it to a single value
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 23. Write the JavaScript Program using **reverse()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+arr.reverse();
+console.log(arr); //Output: [5, 4, 3, 2, 1]
+```
+
+Reverses the order of the elements in an array
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+## Q 24. Write the JavaScript Program using **slice()**
+
+```js
+const arr = [1, 2, 3, 4, 5];
+const sliced = arr.slice(1, 4);
+console.log(sliced); //Output: [5, 4, 3, 2, 1]
+```
+
+Extracts a section of an array and returns a new array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
