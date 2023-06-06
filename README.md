@@ -2935,20 +2935,18 @@ Copies a portion of an array to another location within the same array
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 28. Write the JavaScript Program using **isArray()**
+## Q 29. Write the JavaScript Program using **Array.of()**
 
 ```js
-const arr = [1, 2, 3];
-console.log(Array.isArray(array)); //Output:true;
+const array = Array.of(1, 2, 3, 4, 5);
+console.log(array); //Output:[1,2,3,4,5]
 
-const string = "Abhishek";
-console.log(Array.isArray(string)); //Output:false;
-
-const object = { name: "John", age: 30 };
-console.log(Array.isArray(object)); //Output:false;
+const singleElementArray = Array.of(10);
+console.log(singleElementArray); //Output:[10]
 ```
 
-It is used to determine whether a given value is an array or not It returns true if the value is an array, and false otherwise.
+is a built in method in JavaScript that is used to convert the elements of an
+array into localized strings based on the current locale settings
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
