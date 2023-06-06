@@ -17,6 +17,7 @@ By familiarizing yourself with these JavaScript programming questions, you'll ga
 - [String Based Programs](#String-Based-Programs)
 - [Converters](#Converters)
 - [Print the Series](#Print-the-Series)
+- [Special Function](#Problem-solved-using-special-Function)
 
 <br/>
 
@@ -2495,6 +2496,22 @@ is prime using the isPrime function and prints it if it is.
 In the example usage, the program prints the prime number series with 10
 prime numbers. You can modify the value of numberOfPrimes to generate a
 different number of prime numbers in the series.
+
+**[⬆ Back to Top](#table-of-contents)**
+</br>
+
+# Problem solved using special Function
+
+## Q 1. Write the JavaScript Program using **_Concat_**
+
+```js
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const result = arr1.concat(arr2);
+console.log(result); //Output: [1, 2, 3, 4, 5, 6];
+```
+
+Concatenates two or more arrays
 
 **[⬆ Back to Top](#table-of-contents)**
 </br>
