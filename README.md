@@ -2787,19 +2787,6 @@ that element
 **[⬆ Back to Top](#table-of-contents)**
 </br>
 
-## Q 21. Write the JavaScript Program using **unshift()**
-
-```js
-const arr = [1, 2, 3, 4, 5];
-arr.unshift(0);
-console.log(arr); //Output: [0,1,2,3,4,5]
-```
-
-Adds one or more elements to the beginning of an array
-and returns the new length of the array
-
-**[⬆ Back to Top](#table-of-contents)**
-</br>
 
 ## Q 21. Write the JavaScript Program using **unshift()**
 
